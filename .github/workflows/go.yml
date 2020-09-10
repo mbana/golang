@@ -1,0 +1,130 @@
+# Examples:
+# * https://github.com/actions/setup-go
+# * https://github.com/mvdan/github-actions-golang
+name: go
+on:
+  - push
+  - pull_request
+# on:
+#   push:
+#     branches: [ master ]
+#   pull_request:
+#     branches: [ master ]
+defaults:
+  run:
+    shell: bash
+jobs:
+  project_template:
+    env:
+      TERM: 'xterm-256color'
+      # GO111MODULE: 'on'
+    continue-on-error: true
+    strategy:
+      max-parallel: 6
+      fail-fast: false
+      matrix:
+        go:
+          - 1.13
+          # - 1.13.x
+          # - 1.14
+          # - 1.14.x
+          # - 1.15
+          # - 1.15.x
+        os:
+          - ubuntu-20.04
+          # - ubuntu-16.04
+          # - ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    name: ${{ github.event.repository.name }}_${{ matrix.os }}_${{ matrix.go }}
+    steps:
+      - name: environment_details - ${{ matrix.os }}_${{ matrix.go }}
+        continue-on-error: true
+        shell: bash
+        run: |
+          pwd
+          ls -lah .
+          ls -lah ..
+          ls -lah ../
+          ls -lah /
+          printf -- "  %b" \
+            "uname -a=$(uname -a)" $'\n' \
+            "uname -s=$(uname -s)" $'\n'
+
+      # - name: install linux packages - ${{ matrix.os }}_${{ matrix.go }}
+      #   if: matrix.os == 'ubuntu-latest'
+      #   run: sudo apt update && sudo apt install -y --no-install-recommends make
+
+      - name: install linux packages - ${{ matrix.os }}_${{ matrix.go }}
+        run: sudo apt update && sudo apt install -y --no-install-recommends make
+
+      - name: setup - go - ${{ matrix.os }}_${{ matrix.go }}
+        uses: actions/setup-go@v1
+        with:
+          go-version: ${{ matrix.go }}
+
+      - name: checkout - ${{ matrix.os }}_${{ matrix.go }}
+        uses: actions/checkout@v2
+
+      - name: scripts/make_all.sh - run - ${{ matrix.os }}_${{ matrix.go }}
+        continue-on-error: true
+        shell: bash
+        run: |
+          ./scripts/make_all.sh
+
+# - name: build - ${{ matrix.os }}_${{ matrix.go }}
+#   continue-on-error: true
+#   shell: bash
+#   run: |
+#     cd project_template
+#     go build ./...
+# - name: test - ${{ matrix.os }}_${{ matrix.go }}
+#   continue-on-error: true
+#   shell: bash
+#   run: |
+#     cd project_template
+#     go test -count=1 -v ./...
+#     go test -count=1 -v -parallel 32 ./...
+#     go test -count=1 -v -race ./...
+#     go test -count=1 -v -race -parallel 32 ./...
+# - name: run - ${{ matrix.os }}_${{ matrix.go }}
+#   continue-on-error: true
+#   shell: bash
+#   run: |
+#     cd project_template
+#     go run cmd/main.go
+# - name: make build - ${{ matrix.os }}_${{ matrix.go }}
+#   continue-on-error: true
+#   shell: bash
+#   run: |
+#     cd project_template
+#     make build
+# - name: make test - ${{ matrix.os }}_${{ matrix.go }}
+#   continue-on-error: true
+#   shell: bash
+#   run: |
+#     cd project_template
+#     make test
+# - name: make run - ${{ matrix.os }}_${{ matrix.go }}
+#   continue-on-error: true
+#   shell: bash
+#   run: |
+#     cd project_template
+#     make run
+# - name: samples - make build - ${{ matrix.os }}_${{ matrix.go }}
+#   continue-on-error: true
+#   shell: bash
+#   run: |
+#     cd samples
+#     make build
+# - name: samples - make test - ${{ matrix.os }}_${{ matrix.go }}
+#   continue-on-error: true
+#   shell: bash
+#   run: |
+#     cd samples
+#     make test
+# - name: samples - make run - ${{ matrix.os }}_${{ matrix.go }}
+#   continue-on-error: true
+#   shell: bash
+#   run: |
+#     cd samples
+#     make run

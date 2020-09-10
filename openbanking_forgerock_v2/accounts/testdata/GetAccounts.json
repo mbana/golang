@@ -1,0 +1,56 @@
+{
+    "Data": {
+        "Account": [
+            {
+                "AccountId": "549908cd-e3a1-4e8b-932d-740d1549437d",
+                "Currency": "GBP",
+                "AccountType": "Personal",
+                "AccountSubType": "CurrentAccount",
+                "Nickname": "Household",
+                "Account": [
+                    {
+                        "SchemeName": "UK.OBIE.SortCodeAccountNumber",
+                        "Identification": "66318297514388",
+                        "Name": "banaio"
+                    }
+                ]
+            },
+            {
+                "AccountId": "98c887b9-8dde-4134-8dec-d9a525d0368e",
+                "Currency": "GBP",
+                "AccountType": "Personal",
+                "AccountSubType": "CurrentAccount",
+                "Nickname": "UK Bills",
+                "Account": [
+                    {
+                        "SchemeName": "UK.OBIE.SortCodeAccountNumber",
+                        "Identification": "2400082095541",
+                        "Name": "banaio",
+                        "SecondaryIdentification": "54913071"
+                    }
+                ]
+            },
+            {
+                "AccountId": "b0fd9a9f-ad98-472a-b032-4ac490b69513",
+                "Currency": "EUR",
+                "AccountType": "Personal",
+                "AccountSubType": "CurrentAccount",
+                "Nickname": "FR Bills",
+                "Account": [
+                    {
+                        "SchemeName": "UK.OBIE.SortCodeAccountNumber",
+                        "Identification": "545174289448",
+                        "Name": "banaio",
+                        "SecondaryIdentification": "21336919"
+                    }
+                ]
+            }
+        ]
+    },
+    "Links": {
+        "Self": "https://matls.rs.aspsp.ob.forgerock.financial/open-banking/v3.1/aisp/accounts"
+    },
+    "Meta": {
+        "TotalPages": 1
+    }
+}
