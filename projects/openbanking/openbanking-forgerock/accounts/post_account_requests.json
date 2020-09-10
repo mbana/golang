@@ -1,0 +1,28 @@
+{
+    "Data": {
+        "Permissions": [
+            "ReadAccountsDetail",
+            "ReadBalances",
+            "ReadBeneficiariesDetail",
+            "ReadDirectDebits",
+            "ReadProducts",
+            "ReadStandingOrdersDetail",
+            "ReadTransactionsCredits",
+            "ReadTransactionsDebits",
+            "ReadTransactionsBasic",
+            "ReadTransactionsDetail",
+            "ReadStatementsBasic",
+            "ReadStatementsDetail",
+            "ReadPartyPSU",
+            "ReadBeneficiariesBasic",
+            "ReadAccountsBasic",
+            "ReadParty",
+            "ReadOffers",
+            "ReadScheduledPaymentsDetail"
+        ],
+        "ExpirationDateTime": "2050-12-12T00:00:00+00:00",
+        "TransactionFromDateTime": "2017-05-03T00:00:00+00:00",
+        "TransactionToDateTime": "2050-12-03T00:00:00+00:00"
+    },
+    "Risk": {}
+}

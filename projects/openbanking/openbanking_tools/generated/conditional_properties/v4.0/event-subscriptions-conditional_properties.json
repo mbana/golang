@@ -1,0 +1,194 @@
+{
+  "swagger_path": "specifications/read-write/v4.0/event-subscriptions-swagger.yaml",
+  "endpoints": [
+    {
+      "conditionalProperties": [
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev",
+        "Links.First",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages",
+        "Data.EventSubscription[*].CallbackUrl"
+      ],
+      "method": "GET",
+      "path": "/event-subscriptions",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Message",
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id"
+      ],
+      "method": "GET",
+      "path": "/event-subscriptions",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message",
+        "Code"
+      ],
+      "method": "GET",
+      "path": "/event-subscriptions",
+      "status_code": 403
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Url",
+        "Errors[*].Path",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/event-subscriptions",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "POST",
+      "path": "/event-subscriptions",
+      "status_code": 403
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "POST",
+      "path": "/event-subscriptions",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "POST",
+      "path": "/event-subscriptions",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Data.CallbackUrl",
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev",
+        "Meta.TotalPages",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime"
+      ],
+      "method": "POST",
+      "path": "/event-subscriptions",
+      "status_code": 201
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "PUT",
+      "path": "/event-subscriptions/{EventSubscriptionId}",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Data.CallbackUrl",
+        "Links.Next",
+        "Links.Prev",
+        "Links.First",
+        "Links.Last",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages"
+      ],
+      "method": "PUT",
+      "path": "/event-subscriptions/{EventSubscriptionId}",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "PUT",
+      "path": "/event-subscriptions/{EventSubscriptionId}",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "PUT",
+      "path": "/event-subscriptions/{EventSubscriptionId}",
+      "status_code": 403
+    },
+    {
+      "conditionalProperties": [
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message",
+        "Code"
+      ],
+      "method": "DELETE",
+      "path": "/event-subscriptions/{EventSubscriptionId}",
+      "status_code": 403
+    },
+    {
+      "conditionalProperties": [
+        "Id",
+        "Message",
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url"
+      ],
+      "method": "DELETE",
+      "path": "/event-subscriptions/{EventSubscriptionId}",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Url",
+        "Errors[*].Path",
+        "Id",
+        "Message"
+      ],
+      "method": "DELETE",
+      "path": "/event-subscriptions/{EventSubscriptionId}",
+      "status_code": 500
+    }
+  ]
+}

@@ -1,0 +1,305 @@
+{
+  "Data": {
+    "Statement": [
+      {
+        "AccountId": "549908cd-e3a1-4e8b-932d-740d1549437d",
+        "StatementId": "11e95e29-8e03-4c66-b7c3-b5aad20c3057",
+        "StatementReference": "2018-06",
+        "Type": "RegularPeriodic",
+        "StartDateTime": "2018-06-01T16:47:40+00:00",
+        "EndDateTime": "2018-06-30T16:47:40+00:00",
+        "StatementDescription": [
+          "Jun 2018"
+        ],
+        "StatementAmount": [
+          {
+            "CreditDebitIndicator": "Debit",
+            "Type": "PreviousClosingBalance",
+            "Amount": {
+              "Amount": "5263.27",
+              "Currency": "GBP"
+            }
+          },
+          {
+            "CreditDebitIndicator": "Debit",
+            "Type": "ClosingBalance",
+            "Amount": {
+              "Amount": "4845.71",
+              "Currency": "GBP"
+            }
+          }
+        ]
+      },
+      {
+        "AccountId": "549908cd-e3a1-4e8b-932d-740d1549437d",
+        "StatementId": "148be291-4b3d-4d01-a8c0-d995ea5342dc",
+        "StatementReference": "2018-08",
+        "Type": "RegularPeriodic",
+        "StartDateTime": "2018-08-01T16:47:40+00:00",
+        "EndDateTime": "2018-08-31T16:47:40+00:00",
+        "StatementDescription": [
+          "Aug 2018"
+        ],
+        "StatementAmount": [
+          {
+            "CreditDebitIndicator": "Debit",
+            "Type": "PreviousClosingBalance",
+            "Amount": {
+              "Amount": "6100.95",
+              "Currency": "GBP"
+            }
+          },
+          {
+            "CreditDebitIndicator": "Debit",
+            "Type": "ClosingBalance",
+            "Amount": {
+              "Amount": "7426.33",
+              "Currency": "GBP"
+            }
+          }
+        ]
+      },
+      {
+        "AccountId": "549908cd-e3a1-4e8b-932d-740d1549437d",
+        "StatementId": "15ba652c-2e06-43c6-b3c4-f18ed6f05df1",
+        "StatementReference": "2018-05",
+        "Type": "RegularPeriodic",
+        "StartDateTime": "2018-05-01T16:47:40+00:00",
+        "EndDateTime": "2018-05-31T16:47:40+00:00",
+        "StatementDescription": [
+          "May 2018"
+        ],
+        "StatementAmount": [
+          {
+            "CreditDebitIndicator": "Debit",
+            "Type": "PreviousClosingBalance",
+            "Amount": {
+              "Amount": "7822.22",
+              "Currency": "GBP"
+            }
+          },
+          {
+            "CreditDebitIndicator": "Debit",
+            "Type": "ClosingBalance",
+            "Amount": {
+              "Amount": "5263.27",
+              "Currency": "GBP"
+            }
+          }
+        ]
+      },
+      {
+        "AccountId": "549908cd-e3a1-4e8b-932d-740d1549437d",
+        "StatementId": "1e76df89-0d32-4c21-9218-393b20e5cc79",
+        "StatementReference": "2019-01",
+        "Type": "RegularPeriodic",
+        "StartDateTime": "2019-01-01T16:47:40+00:00",
+        "EndDateTime": "2019-01-31T16:47:40+00:00",
+        "StatementDescription": [
+          "Jan 2019"
+        ],
+        "StatementAmount": [
+          {
+            "CreditDebitIndicator": "Debit",
+            "Type": "PreviousClosingBalance",
+            "Amount": {
+              "Amount": "3203.64",
+              "Currency": "GBP"
+            }
+          },
+          {
+            "CreditDebitIndicator": "Debit",
+            "Type": "ClosingBalance",
+            "Amount": {
+              "Amount": "2159.24",
+              "Currency": "GBP"
+            }
+          }
+        ]
+      },
+      {
+        "AccountId": "549908cd-e3a1-4e8b-932d-740d1549437d",
+        "StatementId": "243546d4-d521-4a24-9a7e-2bc58f5b6557",
+        "StatementReference": "2018-07",
+        "Type": "RegularPeriodic",
+        "StartDateTime": "2018-07-01T16:47:40+00:00",
+        "EndDateTime": "2018-07-31T16:47:40+00:00",
+        "StatementDescription": [
+          "Jul 2018"
+        ],
+        "StatementAmount": [
+          {
+            "CreditDebitIndicator": "Debit",
+            "Type": "PreviousClosingBalance",
+            "Amount": {
+              "Amount": "4845.71",
+              "Currency": "GBP"
+            }
+          },
+          {
+            "CreditDebitIndicator": "Debit",
+            "Type": "ClosingBalance",
+            "Amount": {
+              "Amount": "6100.95",
+              "Currency": "GBP"
+            }
+          }
+        ]
+      },
+      {
+        "AccountId": "549908cd-e3a1-4e8b-932d-740d1549437d",
+        "StatementId": "24c6a21c-2e78-41fd-ae32-f71ff5b51162",
+        "StatementReference": "2018-09",
+        "Type": "RegularPeriodic",
+        "StartDateTime": "2018-09-01T16:47:40+00:00",
+        "EndDateTime": "2018-09-30T16:47:40+00:00",
+        "StatementDescription": [
+          "Sep 2018"
+        ],
+        "StatementAmount": [
+          {
+            "CreditDebitIndicator": "Debit",
+            "Type": "PreviousClosingBalance",
+            "Amount": {
+              "Amount": "7426.33",
+              "Currency": "GBP"
+            }
+          },
+          {
+            "CreditDebitIndicator": "Debit",
+            "Type": "ClosingBalance",
+            "Amount": {
+              "Amount": "6272.28",
+              "Currency": "GBP"
+            }
+          }
+        ]
+      },
+      {
+        "AccountId": "549908cd-e3a1-4e8b-932d-740d1549437d",
+        "StatementId": "54c8818c-d560-4f6d-a340-0e940425a4e8",
+        "StatementReference": "2018-04",
+        "Type": "RegularPeriodic",
+        "StartDateTime": "2018-04-01T16:47:40+00:00",
+        "EndDateTime": "2018-04-30T16:47:40+00:00",
+        "StatementDescription": [
+          "Apr 2018"
+        ],
+        "StatementAmount": [
+          {
+            "CreditDebitIndicator": "Debit",
+            "Type": "PreviousClosingBalance",
+            "Amount": {
+              "Amount": "8943.95",
+              "Currency": "GBP"
+            }
+          },
+          {
+            "CreditDebitIndicator": "Debit",
+            "Type": "ClosingBalance",
+            "Amount": {
+              "Amount": "7822.22",
+              "Currency": "GBP"
+            }
+          }
+        ]
+      },
+      {
+        "AccountId": "549908cd-e3a1-4e8b-932d-740d1549437d",
+        "StatementId": "8fdfe63c-7b73-4883-ab21-e80a4c42dadf",
+        "StatementReference": "2018-10",
+        "Type": "RegularPeriodic",
+        "StartDateTime": "2018-10-01T16:47:40+00:00",
+        "EndDateTime": "2018-10-31T16:47:40+00:00",
+        "StatementDescription": [
+          "Oct 2018"
+        ],
+        "StatementAmount": [
+          {
+            "CreditDebitIndicator": "Debit",
+            "Type": "PreviousClosingBalance",
+            "Amount": {
+              "Amount": "6272.28",
+              "Currency": "GBP"
+            }
+          },
+          {
+            "CreditDebitIndicator": "Debit",
+            "Type": "ClosingBalance",
+            "Amount": {
+              "Amount": "6493.34",
+              "Currency": "GBP"
+            }
+          }
+        ]
+      },
+      {
+        "AccountId": "549908cd-e3a1-4e8b-932d-740d1549437d",
+        "StatementId": "96178107-875b-424e-9ff9-2ddf4e65a73b",
+        "StatementReference": "2019-02",
+        "Type": "RegularPeriodic",
+        "StartDateTime": "2019-02-01T16:47:40+00:00",
+        "EndDateTime": "2019-02-28T16:47:40+00:00",
+        "StatementDescription": [
+          "Feb 2019"
+        ],
+        "StatementAmount": [
+          {
+            "CreditDebitIndicator": "Debit",
+            "Type": "PreviousClosingBalance",
+            "Amount": {
+              "Amount": "2159.24",
+              "Currency": "GBP"
+            }
+          },
+          {
+            "CreditDebitIndicator": "Debit",
+            "Type": "ClosingBalance",
+            "Amount": {
+              "Amount": "2971.95",
+              "Currency": "GBP"
+            }
+          }
+        ]
+      },
+      {
+        "AccountId": "549908cd-e3a1-4e8b-932d-740d1549437d",
+        "StatementId": "999f54a8-a603-487e-b66f-d137fe4f7d64",
+        "StatementReference": "2019-03",
+        "Type": "RegularPeriodic",
+        "StartDateTime": "2019-03-01T16:47:40+00:00",
+        "EndDateTime": "2019-03-31T16:47:40+00:00",
+        "StatementDescription": [
+          "Mar 2019"
+        ],
+        "StatementAmount": [
+          {
+            "CreditDebitIndicator": "Debit",
+            "Type": "PreviousClosingBalance",
+            "Amount": {
+              "Amount": "2971.95",
+              "Currency": "GBP"
+            }
+          },
+          {
+            "CreditDebitIndicator": "Debit",
+            "Type": "ClosingBalance",
+            "Amount": {
+              "Amount": "744.55",
+              "Currency": "GBP"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "Links": {
+    "Self": "https://matls.rs.aspsp.ob.forgerock.financial/open-banking/v3.1/aisp/accounts/549908cd-e3a1-4e8b-932d-740d1549437d/statements",
+    "First": "https://matls.rs.aspsp.ob.forgerock.financial/open-banking/v3.1/aisp/accounts/549908cd-e3a1-4e8b-932d-740d1549437d/statements?page=0",
+    "Next": "https://matls.rs.aspsp.ob.forgerock.financial/open-banking/v3.1/aisp/accounts/549908cd-e3a1-4e8b-932d-740d1549437d/statements?page=1",
+    "Last": "https://matls.rs.aspsp.ob.forgerock.financial/open-banking/v3.1/aisp/accounts/549908cd-e3a1-4e8b-932d-740d1549437d/statements?page=1"
+  },
+  "Meta": {
+    "TotalPages": 2
+  }
+}

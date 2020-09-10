@@ -1,0 +1,143 @@
+{
+  "swagger_path": "specifications/read-write/v3.1.3/callback-urls-swagger.yaml",
+  "endpoints": [
+    {
+      "conditionalProperties": [
+        "Message",
+        "Code",
+        "Errors[*].Url",
+        "Errors[*].Path",
+        "Id"
+      ],
+      "method": "GET",
+      "path": "/callback-urls",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages"
+      ],
+      "method": "GET",
+      "path": "/callback-urls",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/callback-urls",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "POST",
+      "path": "/callback-urls",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Url",
+        "Errors[*].Path",
+        "Id",
+        "Message"
+      ],
+      "method": "POST",
+      "path": "/callback-urls",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Links.Prev",
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages"
+      ],
+      "method": "POST",
+      "path": "/callback-urls",
+      "status_code": 201
+    },
+    {
+      "conditionalProperties": [
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages"
+      ],
+      "method": "PUT",
+      "path": "/callback-urls/{CallbackUrlId}",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "PUT",
+      "path": "/callback-urls/{CallbackUrlId}",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Id",
+        "Message",
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url"
+      ],
+      "method": "PUT",
+      "path": "/callback-urls/{CallbackUrlId}",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Url",
+        "Errors[*].Path",
+        "Id",
+        "Message"
+      ],
+      "method": "DELETE",
+      "path": "/callback-urls/{CallbackUrlId}",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Errors[*].Url",
+        "Errors[*].Path",
+        "Id",
+        "Message",
+        "Code"
+      ],
+      "method": "DELETE",
+      "path": "/callback-urls/{CallbackUrlId}",
+      "status_code": 500
+    }
+  ]
+}

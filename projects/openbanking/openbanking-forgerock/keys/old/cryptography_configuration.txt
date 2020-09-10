@@ -1,0 +1,26 @@
+Cryptography configuration
+Global
+Expiration window
+7200000 ms
+
+Transport keys
+link
+JWK_URI
+https://service.directory.ob.forgerock.financial/api/software-statement/5cb716a503f0df001d916ab1/application/transport/jwk_uri
+
+Default signing algorithm
+PS256
+
+Signing and encryption keys
+link
+JWK URI
+https://service.directory.ob.forgerock.financial/api/software-statement/5cb716a503f0df001d916ab1/application/jwk_uri
+
+Default signing algorithm
+PS256
+
+Default encryption algorithm
+RSA-OAEP-256
+
+Default encryption method
+A128CBC-HS256

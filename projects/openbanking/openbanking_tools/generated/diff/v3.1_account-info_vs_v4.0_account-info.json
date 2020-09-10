@@ -1,0 +1,111 @@
+[
+  {
+    "location": {
+      "url": "",
+      "node": {
+        "name": "Spec",
+        "child": {
+          "name": "consumes"
+        }
+      }
+    },
+    "code": "AddedConsumesFormat",
+    "compatibility": "NonBreaking",
+    "info": "application/jose+jwe"
+  },
+  {
+    "location": {
+      "url": "",
+      "node": {
+        "name": "Spec",
+        "child": {
+          "name": "produces"
+        }
+      }
+    },
+    "code": "AddedProducesFormat",
+    "compatibility": "Breaking",
+    "info": "application/jose+jwe"
+  },
+  {
+    "location": {
+      "url": "/accounts/{AccountId}/parties",
+      "method": "get"
+    },
+    "code": "AddedEndpoint",
+    "compatibility": "NonBreaking"
+  },
+  {
+    "location": {
+      "url": "/accounts/{AccountId}/statements/{StatementId}/transactions",
+      "method": "get"
+    },
+    "code": "DeletedTag",
+    "compatibility": "NonBreaking",
+    "info": "Statements"
+  },
+  {
+    "location": {
+      "url": "/party",
+      "method": "get"
+    },
+    "code": "AddedTag",
+    "compatibility": "NonBreaking",
+    "info": "Parties"
+  },
+  {
+    "location": {
+      "url": "/party",
+      "method": "get"
+    },
+    "code": "DeletedTag",
+    "compatibility": "NonBreaking",
+    "info": "Partys"
+  },
+  {
+    "location": {
+      "url": "/accounts/{AccountId}/party",
+      "method": "get"
+    },
+    "code": "AddedTag",
+    "compatibility": "NonBreaking",
+    "info": "Parties"
+  },
+  {
+    "location": {
+      "url": "/accounts/{AccountId}/party",
+      "method": "get"
+    },
+    "code": "DeletedTag",
+    "compatibility": "NonBreaking",
+    "info": "Partys"
+  },
+  {
+    "location": {
+      "url": "/accounts/{AccountId}",
+      "method": "get",
+      "response": 404
+    },
+    "code": "AddedResponse",
+    "compatibility": "NonBreaking"
+  },
+  {
+    "location": {
+      "url": "/account-access-consents",
+      "method": "post",
+      "response": 415
+    },
+    "code": "DeletedResponse",
+    "compatibility": "Breaking"
+  },
+  {
+    "location": {
+      "url": "/accounts/{AccountId}/balances",
+      "method": "get",
+      "response": 404
+    },
+    "code": "AddedResponse",
+    "compatibility": "NonBreaking"
+  }
+]
+

@@ -1,0 +1,145 @@
+{
+  "swagger_path": "specifications/read-write/v3.1.1/confirmation-funds-swagger.yaml",
+  "endpoints": [
+    {
+      "conditionalProperties": [
+        "Message",
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id"
+      ],
+      "method": "POST",
+      "path": "/funds-confirmation-consents",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Id",
+        "Message",
+        "Code",
+        "Errors[*].Url",
+        "Errors[*].Path"
+      ],
+      "method": "POST",
+      "path": "/funds-confirmation-consents",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages",
+        "Data.ExpirationDateTime",
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev"
+      ],
+      "method": "POST",
+      "path": "/funds-confirmation-consents",
+      "status_code": 201
+    },
+    {
+      "conditionalProperties": [
+        "Id",
+        "Message",
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url"
+      ],
+      "method": "GET",
+      "path": "/funds-confirmation-consents/{ConsentId}",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Message",
+        "Code",
+        "Errors[*].Url",
+        "Errors[*].Path",
+        "Id"
+      ],
+      "method": "GET",
+      "path": "/funds-confirmation-consents/{ConsentId}",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Data.ExpirationDateTime",
+        "Links.Prev",
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages"
+      ],
+      "method": "GET",
+      "path": "/funds-confirmation-consents/{ConsentId}",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message",
+        "Code"
+      ],
+      "method": "DELETE",
+      "path": "/funds-confirmation-consents/{ConsentId}",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Id",
+        "Message",
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url"
+      ],
+      "method": "DELETE",
+      "path": "/funds-confirmation-consents/{ConsentId}",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev",
+        "Links.First",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages"
+      ],
+      "method": "POST",
+      "path": "/funds-confirmations",
+      "status_code": 201
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "POST",
+      "path": "/funds-confirmations",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "POST",
+      "path": "/funds-confirmations",
+      "status_code": 500
+    }
+  ]
+}

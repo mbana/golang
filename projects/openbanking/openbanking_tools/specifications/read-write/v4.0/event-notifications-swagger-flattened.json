@@ -1,0 +1,58 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Real Time Event Notification API",
+    "description": "Swagger for Real Time Event Notification API (TPP Endpoints)\n\nNote that the `EventNotification` is expected to be a signed JSON Web Token (JSON Web Signature) with the payload encoded as per `#/definitions/OBEventNotification2`\n",
+    "termsOfService": "https://www.openbanking.org.uk/terms",
+    "contact": {
+      "name": "Service Desk",
+      "email": "ServiceDesk@openbanking.org.uk"
+    },
+    "license": {
+      "name": "open-licence",
+      "url": "https://www.openbanking.org.uk/open-licence"
+    },
+    "version": "v3.1.2"
+  },
+  "basePath": "/open-banking/v3.1",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/event-notifications": {
+      "post": {
+        "summary": "Send an event notification",
+        "operationId": "CreateEventNotification",
+        "consumes": [
+          "application/jose"
+        ],
+        "tags": [
+          "Event Notification"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "EventNotification",
+            "description": "JSON Web Signature with payload encoded as per `#/definitions/OBEventNotification2`",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "header",
+            "name": "x-fapi-interaction-id",
+            "type": "string",
+            "required": false,
+            "description": "An RFC4122 UID used as a correlation id."
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Accepted"
+          }
+        }
+      }
+    }
+  }
+}

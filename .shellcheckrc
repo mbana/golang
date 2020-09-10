@@ -1,0 +1,41 @@
+enable=add-default-case
+enable=avoid-nullary-conditions
+enable=check-unassigned-uppercase
+enable=quote-safe-variables
+enable=require-variable-braces
+source-path=./scripts
+
+# RC FILES
+#        Unless  --norc  is used, ShellCheck will look for a file .shellcheckrc or shellcheckrc in the script’s directory and each parent directory.  If found, it will read key=value pairs from it and
+#        treat them as file-wide directives.
+
+#        Here is an example .shellcheckrc:
+
+#               # Look for 'source'd files relative to the checked script,
+#               # and also look for absolute paths in /mnt/chroot
+#               source-path=SCRIPTDIR
+#               source-path=/mnt/chroot
+
+#               # Turn on warnings for unquoted variables with safe values
+#               enable=quote-safe-variables
+
+#               # Turn on warnings for unassigned uppercase variables
+#               enable=check-unassigned-uppercase
+
+#               # Allow using `which` since it gives full paths and is common enough
+#               disable=SC2230
+
+#        If no .shellcheckrc is found in any of the parent directories, ShellCheck will look in ~/.shellcheckrc followed by the XDG config directory (usually ~/.config/shellcheckrc) on Unix, or  %APP‐
+#        DATA%/shellcheckrc on Windows.  Only the first file found will be used.
+
+#        Note for Snap users: the Snap sandbox disallows access to hidden files.  Use shellcheckrc without the dot instead.
+
+#        Note for Docker users: ShellCheck will only be able to look for files that are mounted in the container, so ~/.shellcheckrc will not be read.
+
+
+
+
+
+## To tell ShellCheck where to look for an otherwise dynamically determined file:
+## # shellcheck source=./lib.sh
+## source "$(find_install_dir)/lib.sh"

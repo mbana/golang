@@ -1,0 +1,39 @@
+[
+  {
+    "location": {
+      "url": "/accounts/{AccountId}/statements/{StatementId}/transactions",
+      "method": "get"
+    },
+    "code": "DeletedTag",
+    "compatibility": "NonBreaking",
+    "info": "Statements"
+  },
+  {
+    "location": {
+      "url": "/account-access-consents",
+      "method": "post",
+      "response": 415
+    },
+    "code": "DeletedResponse",
+    "compatibility": "Breaking"
+  },
+  {
+    "location": {
+      "url": "/accounts/{AccountId}",
+      "method": "get",
+      "response": 404
+    },
+    "code": "AddedResponse",
+    "compatibility": "NonBreaking"
+  },
+  {
+    "location": {
+      "url": "/accounts/{AccountId}/balances",
+      "method": "get",
+      "response": 404
+    },
+    "code": "AddedResponse",
+    "compatibility": "NonBreaking"
+  }
+]
+

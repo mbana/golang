@@ -1,0 +1,1853 @@
+{
+  "swagger_path": "specifications/read-write/v3.1.3/account-info-swagger.yaml",
+  "endpoints": [
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/transactions",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages",
+        "Data.Transaction[*].SupplementaryData",
+        "Data.Transaction[*].TransactionId",
+        "Data.Transaction[*].TransactionInformation",
+        "Data.Transaction[*].ValueDateTime",
+        "Data.Transaction[*].DebtorAgent.Identification",
+        "Data.Transaction[*].DebtorAgent.Name",
+        "Data.Transaction[*].DebtorAgent.PostalAddress.CountrySubDivision",
+        "Data.Transaction[*].DebtorAgent.PostalAddress.PostCode",
+        "Data.Transaction[*].DebtorAgent.PostalAddress.StreetName",
+        "Data.Transaction[*].DebtorAgent.PostalAddress.AddressType",
+        "Data.Transaction[*].DebtorAgent.PostalAddress.BuildingNumber",
+        "Data.Transaction[*].DebtorAgent.PostalAddress.Country",
+        "Data.Transaction[*].DebtorAgent.PostalAddress.Department",
+        "Data.Transaction[*].DebtorAgent.PostalAddress.SubDepartment",
+        "Data.Transaction[*].DebtorAgent.PostalAddress.TownName",
+        "Data.Transaction[*].DebtorAgent.SchemeName",
+        "Data.Transaction[*].ProprietaryBankTransactionCode.Issuer",
+        "Data.Transaction[*].TransactionReference",
+        "Data.Transaction[*].AddressLine",
+        "Data.Transaction[*].CreditorAccount.Identification",
+        "Data.Transaction[*].CreditorAccount.Name",
+        "Data.Transaction[*].CreditorAccount.SchemeName",
+        "Data.Transaction[*].CreditorAccount.SecondaryIdentification",
+        "Data.Transaction[*].DebtorAccount.Identification",
+        "Data.Transaction[*].DebtorAccount.Name",
+        "Data.Transaction[*].DebtorAccount.SchemeName",
+        "Data.Transaction[*].DebtorAccount.SecondaryIdentification",
+        "Data.Transaction[*].MerchantDetails.MerchantCategoryCode",
+        "Data.Transaction[*].MerchantDetails.MerchantName",
+        "Data.Transaction[*].CardInstrument.Identification",
+        "Data.Transaction[*].CardInstrument.Name",
+        "Data.Transaction[*].CardInstrument.AuthorisationType",
+        "Data.Transaction[*].CreditorAgent.Identification",
+        "Data.Transaction[*].CreditorAgent.Name",
+        "Data.Transaction[*].CreditorAgent.PostalAddress.CountrySubDivision",
+        "Data.Transaction[*].CreditorAgent.PostalAddress.Department",
+        "Data.Transaction[*].CreditorAgent.PostalAddress.PostCode",
+        "Data.Transaction[*].CreditorAgent.PostalAddress.TownName",
+        "Data.Transaction[*].CreditorAgent.PostalAddress.AddressType",
+        "Data.Transaction[*].CreditorAgent.PostalAddress.BuildingNumber",
+        "Data.Transaction[*].CreditorAgent.PostalAddress.Country",
+        "Data.Transaction[*].CreditorAgent.PostalAddress.StreetName",
+        "Data.Transaction[*].CreditorAgent.PostalAddress.SubDepartment",
+        "Data.Transaction[*].CreditorAgent.SchemeName",
+        "Data.Transaction[*].CurrencyExchange.QuotationDate",
+        "Data.Transaction[*].CurrencyExchange.TargetCurrency",
+        "Data.Transaction[*].CurrencyExchange.UnitCurrency",
+        "Data.Transaction[*].CurrencyExchange.ContractIdentification",
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev"
+      ],
+      "method": "GET",
+      "path": "/transactions",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Message",
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id"
+      ],
+      "method": "GET",
+      "path": "/transactions",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/transactions",
+      "status_code": 403
+    },
+    {
+      "conditionalProperties": [
+        "Data.DirectDebit[*].Frequency",
+        "Data.DirectDebit[*].PreviousPaymentDateTime",
+        "Data.DirectDebit[*].DirectDebitId",
+        "Data.DirectDebit[*].DirectDebitStatusCode",
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages"
+      ],
+      "method": "GET",
+      "path": "/direct-debits",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Url",
+        "Errors[*].Path",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/direct-debits",
+      "status_code": 403
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/direct-debits",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/direct-debits",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/account-access-consents/{ConsentId}",
+      "status_code": 403
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/account-access-consents/{ConsentId}",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Data.TransactionFromDateTime",
+        "Data.TransactionToDateTime",
+        "Data.ExpirationDateTime",
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages",
+        "Risk"
+      ],
+      "method": "GET",
+      "path": "/account-access-consents/{ConsentId}",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Id",
+        "Message",
+        "Code",
+        "Errors[*].Url",
+        "Errors[*].Path"
+      ],
+      "method": "GET",
+      "path": "/account-access-consents/{ConsentId}",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Url",
+        "Errors[*].Path",
+        "Id",
+        "Message"
+      ],
+      "method": "DELETE",
+      "path": "/account-access-consents/{ConsentId}",
+      "status_code": 403
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "DELETE",
+      "path": "/account-access-consents/{ConsentId}",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "DELETE",
+      "path": "/account-access-consents/{ConsentId}",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/party",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Id",
+        "Message",
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url"
+      ],
+      "method": "GET",
+      "path": "/party",
+      "status_code": 403
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Url",
+        "Errors[*].Path",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/party",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Data.Party.LegalStructure",
+        "Data.Party.Name",
+        "Data.Party.PartyNumber",
+        "Data.Party.Phone",
+        "Data.Party.AccountRole",
+        "Data.Party.Address[*].StreetName",
+        "Data.Party.Address[*].TownName",
+        "Data.Party.Address[*].AddressType",
+        "Data.Party.Address[*].BuildingNumber",
+        "Data.Party.Address[*].CountrySubDivision",
+        "Data.Party.Address[*].PostCode",
+        "Data.Party.EmailAddress",
+        "Data.Party.FullLegalName",
+        "Data.Party.BeneficialOwnership",
+        "Data.Party.Mobile",
+        "Data.Party.PartyType",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev",
+        "Links.First",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages"
+      ],
+      "method": "GET",
+      "path": "/party",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/offers",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/offers",
+      "status_code": 403
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/offers",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Data.Offer[*].OfferType",
+        "Data.Offer[*].Term",
+        "Data.Offer[*].Value",
+        "Data.Offer[*].OfferId",
+        "Data.Offer[*].Rate",
+        "Data.Offer[*].StartDateTime",
+        "Data.Offer[*].URL",
+        "Data.Offer[*].Description",
+        "Data.Offer[*].EndDateTime",
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages"
+      ],
+      "method": "GET",
+      "path": "/offers",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/standing-orders",
+      "status_code": 403
+    },
+    {
+      "conditionalProperties": [
+        "Id",
+        "Message",
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/standing-orders",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev",
+        "Links.First",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages",
+        "Data.StandingOrder[*].StandingOrderStatusCode",
+        "Data.StandingOrder[*].SupplementaryData",
+        "Data.StandingOrder[*].FinalPaymentDateTime",
+        "Data.StandingOrder[*].Reference",
+        "Data.StandingOrder[*].StandingOrderId",
+        "Data.StandingOrder[*].FirstPaymentDateTime",
+        "Data.StandingOrder[*].CreditorAccount.SecondaryIdentification",
+        "Data.StandingOrder[*].CreditorAccount.Name",
+        "Data.StandingOrder[*].NextPaymentDateTime"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/standing-orders",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Message",
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/standing-orders",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Data.Statement[*].StatementFee[*].RateType",
+        "Data.Statement[*].StatementFee[*].Description",
+        "Data.Statement[*].StatementFee[*].Frequency",
+        "Data.Statement[*].StatementFee[*].Rate",
+        "Data.Statement[*].StatementId",
+        "Data.Statement[*].StatementInterest[*].Description",
+        "Data.Statement[*].StatementInterest[*].Frequency",
+        "Data.Statement[*].StatementInterest[*].Rate",
+        "Data.Statement[*].StatementInterest[*].RateType",
+        "Data.Statement[*].StatementReference",
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages",
+        "Meta.FirstAvailableDateTime"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/statements",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Url",
+        "Errors[*].Path",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/statements",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/statements",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Url",
+        "Errors[*].Path",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/statements",
+      "status_code": 403
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/statements",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Data.Statement[*].StatementId",
+        "Data.Statement[*].StatementReference",
+        "Data.Statement[*].StatementFee[*].Description",
+        "Data.Statement[*].StatementFee[*].Frequency",
+        "Data.Statement[*].StatementFee[*].Rate",
+        "Data.Statement[*].StatementFee[*].RateType",
+        "Data.Statement[*].StatementInterest[*].RateType",
+        "Data.Statement[*].StatementInterest[*].Description",
+        "Data.Statement[*].StatementInterest[*].Frequency",
+        "Data.Statement[*].StatementInterest[*].Rate",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev",
+        "Links.First",
+        "Meta.TotalPages",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime"
+      ],
+      "method": "GET",
+      "path": "/statements",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/statements",
+      "status_code": 403
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/statements",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/accounts",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/accounts",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Data.Account[*].StatusUpdateDateTime",
+        "Data.Account[*].Nickname",
+        "Data.Account[*].MaturityDate",
+        "Data.Account[*].OpeningDate",
+        "Data.Account[*].Status",
+        "Data.Account[*].Account[*].Name",
+        "Data.Account[*].Account[*].SecondaryIdentification",
+        "Data.Account[*].Description",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev",
+        "Links.First",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages"
+      ],
+      "method": "GET",
+      "path": "/accounts",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/accounts",
+      "status_code": 403
+    },
+    {
+      "conditionalProperties": [
+        "Links.Prev",
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/balances",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/balances",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/balances",
+      "status_code": 403
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/balances",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/beneficiaries",
+      "status_code": 403
+    },
+    {
+      "conditionalProperties": [
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message",
+        "Code"
+      ],
+      "method": "GET",
+      "path": "/beneficiaries",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Data.Beneficiary[*].AccountId",
+        "Data.Beneficiary[*].BeneficiaryId",
+        "Data.Beneficiary[*].CreditorAccount.Name",
+        "Data.Beneficiary[*].CreditorAccount.SecondaryIdentification",
+        "Data.Beneficiary[*].CreditorAgent.SchemeName",
+        "Data.Beneficiary[*].CreditorAgent.Identification",
+        "Data.Beneficiary[*].CreditorAgent.Name",
+        "Data.Beneficiary[*].CreditorAgent.PostalAddress.BuildingNumber",
+        "Data.Beneficiary[*].CreditorAgent.PostalAddress.Country",
+        "Data.Beneficiary[*].CreditorAgent.PostalAddress.CountrySubDivision",
+        "Data.Beneficiary[*].CreditorAgent.PostalAddress.Department",
+        "Data.Beneficiary[*].CreditorAgent.PostalAddress.StreetName",
+        "Data.Beneficiary[*].CreditorAgent.PostalAddress.SubDepartment",
+        "Data.Beneficiary[*].CreditorAgent.PostalAddress.TownName",
+        "Data.Beneficiary[*].CreditorAgent.PostalAddress.AddressType",
+        "Data.Beneficiary[*].CreditorAgent.PostalAddress.PostCode",
+        "Data.Beneficiary[*].Reference",
+        "Data.Beneficiary[*].SupplementaryData",
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages"
+      ],
+      "method": "GET",
+      "path": "/beneficiaries",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Url",
+        "Errors[*].Path",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/beneficiaries",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages",
+        "Data.Beneficiary[*].AccountId",
+        "Data.Beneficiary[*].BeneficiaryId",
+        "Data.Beneficiary[*].CreditorAccount.SecondaryIdentification",
+        "Data.Beneficiary[*].CreditorAccount.Name",
+        "Data.Beneficiary[*].CreditorAgent.SchemeName",
+        "Data.Beneficiary[*].CreditorAgent.Identification",
+        "Data.Beneficiary[*].CreditorAgent.Name",
+        "Data.Beneficiary[*].CreditorAgent.PostalAddress.StreetName",
+        "Data.Beneficiary[*].CreditorAgent.PostalAddress.SubDepartment",
+        "Data.Beneficiary[*].CreditorAgent.PostalAddress.TownName",
+        "Data.Beneficiary[*].CreditorAgent.PostalAddress.BuildingNumber",
+        "Data.Beneficiary[*].CreditorAgent.PostalAddress.Country",
+        "Data.Beneficiary[*].CreditorAgent.PostalAddress.PostCode",
+        "Data.Beneficiary[*].CreditorAgent.PostalAddress.AddressType",
+        "Data.Beneficiary[*].CreditorAgent.PostalAddress.CountrySubDivision",
+        "Data.Beneficiary[*].CreditorAgent.PostalAddress.Department",
+        "Data.Beneficiary[*].Reference",
+        "Data.Beneficiary[*].SupplementaryData",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev",
+        "Links.First"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/beneficiaries",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/beneficiaries",
+      "status_code": 403
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Url",
+        "Errors[*].Path",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/beneficiaries",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/beneficiaries",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Id",
+        "Message",
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/parties",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/parties",
+      "status_code": 403
+    },
+    {
+      "conditionalProperties": [
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages",
+        "Meta.FirstAvailableDateTime",
+        "Data.Party[*].AccountRole",
+        "Data.Party[*].EmailAddress",
+        "Data.Party[*].LegalStructure",
+        "Data.Party[*].Name",
+        "Data.Party[*].Phone",
+        "Data.Party[*].Address[*].StreetName",
+        "Data.Party[*].Address[*].TownName",
+        "Data.Party[*].Address[*].AddressType",
+        "Data.Party[*].Address[*].BuildingNumber",
+        "Data.Party[*].Address[*].CountrySubDivision",
+        "Data.Party[*].Address[*].PostCode",
+        "Data.Party[*].BeneficialOwnership",
+        "Data.Party[*].FullLegalName",
+        "Data.Party[*].Mobile",
+        "Data.Party[*].PartyNumber",
+        "Data.Party[*].PartyType",
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/parties",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message",
+        "Code"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/parties",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/scheduled-payments",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/scheduled-payments",
+      "status_code": 403
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/scheduled-payments",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Data.ScheduledPayment[*].CreditorAccount.Name",
+        "Data.ScheduledPayment[*].CreditorAccount.SecondaryIdentification",
+        "Data.ScheduledPayment[*].DebtorReference",
+        "Data.ScheduledPayment[*].Reference",
+        "Data.ScheduledPayment[*].ScheduledPaymentId",
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/scheduled-payments",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Data.StandingOrder[*].CreditorAccount.Name",
+        "Data.StandingOrder[*].CreditorAccount.SecondaryIdentification",
+        "Data.StandingOrder[*].StandingOrderId",
+        "Data.StandingOrder[*].StandingOrderStatusCode",
+        "Data.StandingOrder[*].SupplementaryData",
+        "Data.StandingOrder[*].FirstPaymentDateTime",
+        "Data.StandingOrder[*].Reference",
+        "Data.StandingOrder[*].FinalPaymentDateTime",
+        "Data.StandingOrder[*].NextPaymentDateTime",
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev",
+        "Meta.TotalPages",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime"
+      ],
+      "method": "GET",
+      "path": "/standing-orders",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/standing-orders",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/standing-orders",
+      "status_code": 403
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/standing-orders",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message",
+        "Code"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/direct-debits",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Data.DirectDebit[*].DirectDebitStatusCode",
+        "Data.DirectDebit[*].Frequency",
+        "Data.DirectDebit[*].PreviousPaymentDateTime",
+        "Data.DirectDebit[*].DirectDebitId",
+        "Links.Prev",
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/direct-debits",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Id",
+        "Message",
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/direct-debits",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message",
+        "Code"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/direct-debits",
+      "status_code": 403
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Url",
+        "Errors[*].Path",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}",
+      "status_code": 403
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Url",
+        "Errors[*].Path",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages",
+        "Data.Account[*].Description",
+        "Data.Account[*].MaturityDate",
+        "Data.Account[*].Nickname",
+        "Data.Account[*].Status",
+        "Data.Account[*].StatusUpdateDateTime",
+        "Data.Account[*].Account[*].Name",
+        "Data.Account[*].Account[*].SecondaryIdentification",
+        "Data.Account[*].OpeningDate",
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages",
+        "Data.Offer[*].EndDateTime",
+        "Data.Offer[*].OfferId",
+        "Data.Offer[*].OfferType",
+        "Data.Offer[*].Value",
+        "Data.Offer[*].URL",
+        "Data.Offer[*].Description",
+        "Data.Offer[*].Rate",
+        "Data.Offer[*].StartDateTime",
+        "Data.Offer[*].Term"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/offers",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Message",
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/offers",
+      "status_code": 403
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/offers",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/offers",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Links.Prev",
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages",
+        "Risk",
+        "Data.ExpirationDateTime",
+        "Data.TransactionFromDateTime",
+        "Data.TransactionToDateTime"
+      ],
+      "method": "POST",
+      "path": "/account-access-consents",
+      "status_code": 201
+    },
+    {
+      "conditionalProperties": [
+        "Message",
+        "Code",
+        "Errors[*].Url",
+        "Errors[*].Path",
+        "Id"
+      ],
+      "method": "POST",
+      "path": "/account-access-consents",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Url",
+        "Errors[*].Path",
+        "Id",
+        "Message"
+      ],
+      "method": "POST",
+      "path": "/account-access-consents",
+      "status_code": 403
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "POST",
+      "path": "/account-access-consents",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message",
+        "Code"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/statements/{StatementId}/transactions",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/statements/{StatementId}/transactions",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages",
+        "Data.Transaction[*].CreditorAgent.Identification",
+        "Data.Transaction[*].CreditorAgent.Name",
+        "Data.Transaction[*].CreditorAgent.PostalAddress.AddressType",
+        "Data.Transaction[*].CreditorAgent.PostalAddress.BuildingNumber",
+        "Data.Transaction[*].CreditorAgent.PostalAddress.TownName",
+        "Data.Transaction[*].CreditorAgent.PostalAddress.StreetName",
+        "Data.Transaction[*].CreditorAgent.PostalAddress.SubDepartment",
+        "Data.Transaction[*].CreditorAgent.PostalAddress.Country",
+        "Data.Transaction[*].CreditorAgent.PostalAddress.CountrySubDivision",
+        "Data.Transaction[*].CreditorAgent.PostalAddress.Department",
+        "Data.Transaction[*].CreditorAgent.PostalAddress.PostCode",
+        "Data.Transaction[*].CreditorAgent.SchemeName",
+        "Data.Transaction[*].MerchantDetails.MerchantCategoryCode",
+        "Data.Transaction[*].MerchantDetails.MerchantName",
+        "Data.Transaction[*].TransactionReference",
+        "Data.Transaction[*].AddressLine",
+        "Data.Transaction[*].TransactionId",
+        "Data.Transaction[*].TransactionInformation",
+        "Data.Transaction[*].ProprietaryBankTransactionCode.Issuer",
+        "Data.Transaction[*].ValueDateTime",
+        "Data.Transaction[*].DebtorAgent.Identification",
+        "Data.Transaction[*].DebtorAgent.Name",
+        "Data.Transaction[*].DebtorAgent.PostalAddress.CountrySubDivision",
+        "Data.Transaction[*].DebtorAgent.PostalAddress.Department",
+        "Data.Transaction[*].DebtorAgent.PostalAddress.AddressType",
+        "Data.Transaction[*].DebtorAgent.PostalAddress.PostCode",
+        "Data.Transaction[*].DebtorAgent.PostalAddress.StreetName",
+        "Data.Transaction[*].DebtorAgent.PostalAddress.SubDepartment",
+        "Data.Transaction[*].DebtorAgent.PostalAddress.TownName",
+        "Data.Transaction[*].DebtorAgent.PostalAddress.BuildingNumber",
+        "Data.Transaction[*].DebtorAgent.PostalAddress.Country",
+        "Data.Transaction[*].DebtorAgent.SchemeName",
+        "Data.Transaction[*].CardInstrument.Identification",
+        "Data.Transaction[*].CardInstrument.Name",
+        "Data.Transaction[*].CardInstrument.AuthorisationType",
+        "Data.Transaction[*].CreditorAccount.Name",
+        "Data.Transaction[*].CreditorAccount.SchemeName",
+        "Data.Transaction[*].CreditorAccount.SecondaryIdentification",
+        "Data.Transaction[*].CreditorAccount.Identification",
+        "Data.Transaction[*].CurrencyExchange.QuotationDate",
+        "Data.Transaction[*].CurrencyExchange.TargetCurrency",
+        "Data.Transaction[*].CurrencyExchange.UnitCurrency",
+        "Data.Transaction[*].CurrencyExchange.ContractIdentification",
+        "Data.Transaction[*].DebtorAccount.Identification",
+        "Data.Transaction[*].DebtorAccount.Name",
+        "Data.Transaction[*].DebtorAccount.SchemeName",
+        "Data.Transaction[*].DebtorAccount.SecondaryIdentification",
+        "Data.Transaction[*].SupplementaryData",
+        "Links.Next",
+        "Links.Prev",
+        "Links.First",
+        "Links.Last"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/statements/{StatementId}/transactions",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Id",
+        "Message",
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/statements/{StatementId}/transactions",
+      "status_code": 403
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/party",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/party",
+      "status_code": 403
+    },
+    {
+      "conditionalProperties": [
+        "Data.Party.PartyType",
+        "Data.Party.Phone",
+        "Data.Party.FullLegalName",
+        "Data.Party.LegalStructure",
+        "Data.Party.Name",
+        "Data.Party.PartyNumber",
+        "Data.Party.Mobile",
+        "Data.Party.AccountRole",
+        "Data.Party.Address[*].StreetName",
+        "Data.Party.Address[*].TownName",
+        "Data.Party.Address[*].AddressType",
+        "Data.Party.Address[*].BuildingNumber",
+        "Data.Party.Address[*].CountrySubDivision",
+        "Data.Party.Address[*].PostCode",
+        "Data.Party.BeneficialOwnership",
+        "Data.Party.EmailAddress",
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages",
+        "Meta.FirstAvailableDateTime"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/party",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Message",
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/party",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/products",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Message",
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id"
+      ],
+      "method": "GET",
+      "path": "/products",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev",
+        "Meta.TotalPages",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Data.Product[*].BCA.ProductDetails.FeeFreeLengthPeriod",
+        "Data.Product[*].BCA.ProductDetails.FeeFreeLength",
+        "Data.Product[*].BCA.OtherFeesCharges[*].OtherTariffType.Code",
+        "Data.Product[*].BCA.OtherFeesCharges[*].TariffName",
+        "Data.Product[*].BCA.OtherFeesCharges[*].TariffType",
+        "Data.Product[*].BCA.OtherFeesCharges[*].FeeChargeCap[*].CappingPeriod",
+        "Data.Product[*].BCA.OtherFeesCharges[*].FeeChargeCap[*].FeeCapAmount",
+        "Data.Product[*].BCA.OtherFeesCharges[*].FeeChargeCap[*].FeeCapOccurrence",
+        "Data.Product[*].BCA.OtherFeesCharges[*].FeeChargeCap[*].OtherFeeType[*].Code",
+        "Data.Product[*].MarketingStateId",
+        "Data.Product[*].OtherProductType.OtherFeesCharges[*].FeeChargeCap[*].CappingPeriod",
+        "Data.Product[*].OtherProductType.OtherFeesCharges[*].FeeChargeCap[*].FeeCapAmount",
+        "Data.Product[*].OtherProductType.OtherFeesCharges[*].FeeChargeCap[*].FeeCapOccurrence",
+        "Data.Product[*].OtherProductType.OtherFeesCharges[*].FeeChargeCap[*].OtherFeeType[*].Code",
+        "Data.Product[*].OtherProductType.OtherFeesCharges[*].OtherTariffType.Code",
+        "Data.Product[*].OtherProductType.OtherFeesCharges[*].TariffName",
+        "Data.Product[*].OtherProductType.OtherFeesCharges[*].TariffType",
+        "Data.Product[*].OtherProductType.ProductDetails.FeeFreeLength",
+        "Data.Product[*].OtherProductType.ProductDetails.FeeFreeLengthPeriod",
+        "Data.Product[*].OtherProductType.ProductDetails.MonthlyMaximumCharge",
+        "Data.Product[*].OtherProductType.ProductDetails.OtherSegment.Code",
+        "Data.Product[*].OtherProductType.Repayment.RepaymentHoliday[*].MaxHolidayLength",
+        "Data.Product[*].OtherProductType.Repayment.RepaymentHoliday[*].MaxHolidayPeriod",
+        "Data.Product[*].OtherProductType.Repayment.RepaymentType",
+        "Data.Product[*].OtherProductType.Repayment.AmountType",
+        "Data.Product[*].OtherProductType.Repayment.OtherRepaymentType.Code",
+        "Data.Product[*].OtherProductType.Repayment.RepaymentFeeCharges.RepaymentFeeChargeCap[*].OtherFeeType[*].Code",
+        "Data.Product[*].OtherProductType.Repayment.RepaymentFeeCharges.RepaymentFeeChargeCap[*].CappingPeriod",
+        "Data.Product[*].OtherProductType.Repayment.RepaymentFeeCharges.RepaymentFeeChargeCap[*].FeeCapAmount",
+        "Data.Product[*].OtherProductType.Repayment.RepaymentFeeCharges.RepaymentFeeChargeCap[*].FeeCapOccurrence",
+        "Data.Product[*].OtherProductType.Repayment.RepaymentFrequency",
+        "Data.Product[*].OtherProductType.Repayment.OtherAmountType.Code",
+        "Data.Product[*].OtherProductType.Repayment.OtherRepaymentFrequency.Code",
+        "Data.Product[*].OtherProductType.SupplementaryData",
+        "Data.Product[*].ProductName",
+        "Data.Product[*].SecondaryProductId",
+        "Data.Product[*].PCA.OtherFeesCharges.FeeChargeCap[*].OtherFeeType[*].Code",
+        "Data.Product[*].PCA.OtherFeesCharges.FeeChargeCap[*].CappingPeriod",
+        "Data.Product[*].PCA.OtherFeesCharges.FeeChargeCap[*].FeeCapAmount",
+        "Data.Product[*].PCA.OtherFeesCharges.FeeChargeCap[*].FeeCapOccurrence",
+        "Data.Product[*].PCA.ProductDetails.MonthlyMaximumCharge",
+        "Data.Product[*].ProductId"
+      ],
+      "method": "GET",
+      "path": "/products",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/products",
+      "status_code": 403
+    },
+    {
+      "conditionalProperties": [
+        "Data.Transaction[*].DebtorAccount.Identification",
+        "Data.Transaction[*].DebtorAccount.Name",
+        "Data.Transaction[*].DebtorAccount.SchemeName",
+        "Data.Transaction[*].DebtorAccount.SecondaryIdentification",
+        "Data.Transaction[*].ProprietaryBankTransactionCode.Issuer",
+        "Data.Transaction[*].SupplementaryData",
+        "Data.Transaction[*].TransactionReference",
+        "Data.Transaction[*].AddressLine",
+        "Data.Transaction[*].CardInstrument.Identification",
+        "Data.Transaction[*].CardInstrument.Name",
+        "Data.Transaction[*].CardInstrument.AuthorisationType",
+        "Data.Transaction[*].DebtorAgent.Name",
+        "Data.Transaction[*].DebtorAgent.PostalAddress.AddressType",
+        "Data.Transaction[*].DebtorAgent.PostalAddress.Department",
+        "Data.Transaction[*].DebtorAgent.PostalAddress.PostCode",
+        "Data.Transaction[*].DebtorAgent.PostalAddress.Country",
+        "Data.Transaction[*].DebtorAgent.PostalAddress.CountrySubDivision",
+        "Data.Transaction[*].DebtorAgent.PostalAddress.StreetName",
+        "Data.Transaction[*].DebtorAgent.PostalAddress.SubDepartment",
+        "Data.Transaction[*].DebtorAgent.PostalAddress.TownName",
+        "Data.Transaction[*].DebtorAgent.PostalAddress.BuildingNumber",
+        "Data.Transaction[*].DebtorAgent.SchemeName",
+        "Data.Transaction[*].DebtorAgent.Identification",
+        "Data.Transaction[*].MerchantDetails.MerchantCategoryCode",
+        "Data.Transaction[*].MerchantDetails.MerchantName",
+        "Data.Transaction[*].TransactionId",
+        "Data.Transaction[*].CurrencyExchange.ContractIdentification",
+        "Data.Transaction[*].CurrencyExchange.QuotationDate",
+        "Data.Transaction[*].CurrencyExchange.TargetCurrency",
+        "Data.Transaction[*].CurrencyExchange.UnitCurrency",
+        "Data.Transaction[*].CreditorAgent.Identification",
+        "Data.Transaction[*].CreditorAgent.Name",
+        "Data.Transaction[*].CreditorAgent.PostalAddress.CountrySubDivision",
+        "Data.Transaction[*].CreditorAgent.PostalAddress.Department",
+        "Data.Transaction[*].CreditorAgent.PostalAddress.PostCode",
+        "Data.Transaction[*].CreditorAgent.PostalAddress.SubDepartment",
+        "Data.Transaction[*].CreditorAgent.PostalAddress.Country",
+        "Data.Transaction[*].CreditorAgent.PostalAddress.AddressType",
+        "Data.Transaction[*].CreditorAgent.PostalAddress.BuildingNumber",
+        "Data.Transaction[*].CreditorAgent.PostalAddress.StreetName",
+        "Data.Transaction[*].CreditorAgent.PostalAddress.TownName",
+        "Data.Transaction[*].CreditorAgent.SchemeName",
+        "Data.Transaction[*].ValueDateTime",
+        "Data.Transaction[*].CreditorAccount.SecondaryIdentification",
+        "Data.Transaction[*].CreditorAccount.Identification",
+        "Data.Transaction[*].CreditorAccount.Name",
+        "Data.Transaction[*].CreditorAccount.SchemeName",
+        "Data.Transaction[*].TransactionInformation",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev",
+        "Links.First",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages",
+        "Meta.FirstAvailableDateTime"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/transactions",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/transactions",
+      "status_code": 403
+    },
+    {
+      "conditionalProperties": [
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message",
+        "Code"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/transactions",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message",
+        "Code"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/transactions",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/statements/{StatementId}/file",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message",
+        "Code"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/statements/{StatementId}/file",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/statements/{StatementId}/file",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/statements/{StatementId}/file",
+      "status_code": 403
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/scheduled-payments",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/scheduled-payments",
+      "status_code": 403
+    },
+    {
+      "conditionalProperties": [
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages",
+        "Meta.FirstAvailableDateTime",
+        "Data.ScheduledPayment[*].ScheduledPaymentId",
+        "Data.ScheduledPayment[*].CreditorAccount.SecondaryIdentification",
+        "Data.ScheduledPayment[*].CreditorAccount.Name",
+        "Data.ScheduledPayment[*].Reference",
+        "Data.ScheduledPayment[*].DebtorReference"
+      ],
+      "method": "GET",
+      "path": "/scheduled-payments",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Message",
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id"
+      ],
+      "method": "GET",
+      "path": "/scheduled-payments",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev",
+        "Links.First",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages"
+      ],
+      "method": "GET",
+      "path": "/balances",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message",
+        "Code"
+      ],
+      "method": "GET",
+      "path": "/balances",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/balances",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Message",
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id"
+      ],
+      "method": "GET",
+      "path": "/balances",
+      "status_code": 403
+    },
+    {
+      "conditionalProperties": [
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message",
+        "Code"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/statements/{StatementId}",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Data.Statement[*].StatementFee[*].Description",
+        "Data.Statement[*].StatementFee[*].Frequency",
+        "Data.Statement[*].StatementFee[*].Rate",
+        "Data.Statement[*].StatementFee[*].RateType",
+        "Data.Statement[*].StatementId",
+        "Data.Statement[*].StatementInterest[*].Rate",
+        "Data.Statement[*].StatementInterest[*].RateType",
+        "Data.Statement[*].StatementInterest[*].Description",
+        "Data.Statement[*].StatementInterest[*].Frequency",
+        "Data.Statement[*].StatementReference",
+        "Links.Prev",
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Meta.TotalPages",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/statements/{StatementId}",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/statements/{StatementId}",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message",
+        "Code"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/statements/{StatementId}",
+      "status_code": 403
+    },
+    {
+      "conditionalProperties": [
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages",
+        "Data.Product[*].OtherProductType.ProductDetails.FeeFreeLengthPeriod",
+        "Data.Product[*].OtherProductType.ProductDetails.MonthlyMaximumCharge",
+        "Data.Product[*].OtherProductType.ProductDetails.OtherSegment.Code",
+        "Data.Product[*].OtherProductType.ProductDetails.FeeFreeLength",
+        "Data.Product[*].OtherProductType.Repayment.AmountType",
+        "Data.Product[*].OtherProductType.Repayment.OtherAmountType.Code",
+        "Data.Product[*].OtherProductType.Repayment.OtherRepaymentFrequency.Code",
+        "Data.Product[*].OtherProductType.Repayment.OtherRepaymentType.Code",
+        "Data.Product[*].OtherProductType.Repayment.RepaymentFeeCharges.RepaymentFeeChargeCap[*].CappingPeriod",
+        "Data.Product[*].OtherProductType.Repayment.RepaymentFeeCharges.RepaymentFeeChargeCap[*].FeeCapAmount",
+        "Data.Product[*].OtherProductType.Repayment.RepaymentFeeCharges.RepaymentFeeChargeCap[*].FeeCapOccurrence",
+        "Data.Product[*].OtherProductType.Repayment.RepaymentFeeCharges.RepaymentFeeChargeCap[*].OtherFeeType[*].Code",
+        "Data.Product[*].OtherProductType.Repayment.RepaymentHoliday[*].MaxHolidayLength",
+        "Data.Product[*].OtherProductType.Repayment.RepaymentHoliday[*].MaxHolidayPeriod",
+        "Data.Product[*].OtherProductType.Repayment.RepaymentFrequency",
+        "Data.Product[*].OtherProductType.Repayment.RepaymentType",
+        "Data.Product[*].OtherProductType.OtherFeesCharges[*].FeeChargeCap[*].CappingPeriod",
+        "Data.Product[*].OtherProductType.OtherFeesCharges[*].FeeChargeCap[*].FeeCapAmount",
+        "Data.Product[*].OtherProductType.OtherFeesCharges[*].FeeChargeCap[*].FeeCapOccurrence",
+        "Data.Product[*].OtherProductType.OtherFeesCharges[*].FeeChargeCap[*].OtherFeeType[*].Code",
+        "Data.Product[*].OtherProductType.OtherFeesCharges[*].OtherTariffType.Code",
+        "Data.Product[*].OtherProductType.OtherFeesCharges[*].TariffName",
+        "Data.Product[*].OtherProductType.OtherFeesCharges[*].TariffType",
+        "Data.Product[*].OtherProductType.SupplementaryData",
+        "Data.Product[*].PCA.OtherFeesCharges.FeeChargeCap[*].OtherFeeType[*].Code",
+        "Data.Product[*].PCA.OtherFeesCharges.FeeChargeCap[*].CappingPeriod",
+        "Data.Product[*].PCA.OtherFeesCharges.FeeChargeCap[*].FeeCapAmount",
+        "Data.Product[*].PCA.OtherFeesCharges.FeeChargeCap[*].FeeCapOccurrence",
+        "Data.Product[*].PCA.ProductDetails.MonthlyMaximumCharge",
+        "Data.Product[*].ProductId",
+        "Data.Product[*].ProductName",
+        "Data.Product[*].SecondaryProductId",
+        "Data.Product[*].MarketingStateId",
+        "Data.Product[*].BCA.OtherFeesCharges[*].FeeChargeCap[*].CappingPeriod",
+        "Data.Product[*].BCA.OtherFeesCharges[*].FeeChargeCap[*].FeeCapAmount",
+        "Data.Product[*].BCA.OtherFeesCharges[*].FeeChargeCap[*].FeeCapOccurrence",
+        "Data.Product[*].BCA.OtherFeesCharges[*].FeeChargeCap[*].OtherFeeType[*].Code",
+        "Data.Product[*].BCA.OtherFeesCharges[*].OtherTariffType.Code",
+        "Data.Product[*].BCA.OtherFeesCharges[*].TariffName",
+        "Data.Product[*].BCA.OtherFeesCharges[*].TariffType",
+        "Data.Product[*].BCA.ProductDetails.FeeFreeLength",
+        "Data.Product[*].BCA.ProductDetails.FeeFreeLengthPeriod",
+        "Links.Prev",
+        "Links.First",
+        "Links.Last",
+        "Links.Next"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/product",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Id",
+        "Message",
+        "Code",
+        "Errors[*].Url",
+        "Errors[*].Path"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/product",
+      "status_code": 403
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Url",
+        "Errors[*].Path",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/product",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/accounts/{AccountId}/product",
+      "status_code": 400
+    }
+  ]
+}

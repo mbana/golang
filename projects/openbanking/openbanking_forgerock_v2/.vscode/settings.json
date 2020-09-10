@@ -1,0 +1,42 @@
+{
+  "editor.wordWrap": "on",
+  "workbench.colorTheme": "Default Dark+",
+  // "editor.fontSize": 12,
+  "go.buildOnSave": "off",
+  "go.vetOnSave": "off",
+  "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+  },
+  "go.lintOnSave": "workspace",
+  "go.lintTool": "golangci-lint",
+  "go.lintFlags": [
+      "--fast",
+      "--config=${workspaceFolder}/.golangci.yml",
+  ],
+  "go.alternateTools": {
+      "go-langserver": "gopls",
+  },
+  "go.languageServerFlags": [],
+  "go.useLanguageServer": true,
+  "go.languageServerExperimentalFeatures": {
+      "format": true,
+      "autoComplete": true,
+      "rename": true,
+      "goToDefinition": true,
+      "hover": true,
+      "signatureHelp": true,
+      "goToTypeDefinition": true,
+      "goToImplementation": true,
+      "documentSymbols": true,
+      "workspaceSymbols": true,
+      "findReferences": true,
+      "diagnostics": true // for build and vet errors as you type
+  },
+  "[go]": {
+      "editor.snippetSuggestions": "none",
+      "editor.formatOnSave": true,
+      "editor.codeActionsOnSave": {
+          "source.organizeImports": true,
+      },
+  },
+}

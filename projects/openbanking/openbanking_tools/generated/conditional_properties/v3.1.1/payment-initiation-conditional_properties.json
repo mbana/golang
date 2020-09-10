@@ -1,0 +1,1474 @@
+{
+  "swagger_path": "specifications/read-write/v3.1.1/payment-initiation-swagger.yaml",
+  "endpoints": [
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/domestic-standing-order-consents/{ConsentId}",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages",
+        "Risk.MerchantCategoryCode",
+        "Risk.MerchantCustomerIdentification",
+        "Risk.PaymentContextCode",
+        "Risk.DeliveryAddress.BuildingNumber",
+        "Risk.DeliveryAddress.PostCode",
+        "Risk.DeliveryAddress.StreetName",
+        "Data.Authorisation.CompletionDateTime",
+        "Data.CutOffDateTime",
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev"
+      ],
+      "method": "GET",
+      "path": "/domestic-standing-order-consents/{ConsentId}",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message",
+        "Code"
+      ],
+      "method": "GET",
+      "path": "/domestic-standing-order-consents/{ConsentId}",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Id",
+        "Message",
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url"
+      ],
+      "method": "POST",
+      "path": "/international-payments",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message",
+        "Code"
+      ],
+      "method": "POST",
+      "path": "/international-payments",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages",
+        "Data.ExchangeRateInformation.ContractIdentification",
+        "Data.ExchangeRateInformation.ExpirationDateTime",
+        "Data.ExpectedExecutionDateTime",
+        "Data.ExpectedSettlementDateTime",
+        "Data.MultiAuthorisation.ExpirationDateTime",
+        "Data.MultiAuthorisation.LastUpdateDateTime",
+        "Data.MultiAuthorisation.NumberReceived",
+        "Data.MultiAuthorisation.NumberRequired"
+      ],
+      "method": "POST",
+      "path": "/international-payments",
+      "status_code": 201
+    },
+    {
+      "conditionalProperties": [
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages",
+        "Data.Authorisation.CompletionDateTime",
+        "Data.CutOffDateTime"
+      ],
+      "method": "POST",
+      "path": "/file-payment-consents",
+      "status_code": 201
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "POST",
+      "path": "/file-payment-consents",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Message",
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id"
+      ],
+      "method": "POST",
+      "path": "/file-payment-consents",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev",
+        "Links.First",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages",
+        "Meta.FirstAvailableDateTime",
+        "Data.MultiAuthorisation.ExpirationDateTime",
+        "Data.MultiAuthorisation.LastUpdateDateTime",
+        "Data.MultiAuthorisation.NumberReceived",
+        "Data.MultiAuthorisation.NumberRequired"
+      ],
+      "method": "GET",
+      "path": "/international-standing-orders/{InternationalStandingOrderPaymentId}",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/international-standing-orders/{InternationalStandingOrderPaymentId}",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message",
+        "Code"
+      ],
+      "method": "GET",
+      "path": "/international-standing-orders/{InternationalStandingOrderPaymentId}",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/domestic-payment-consents/{ConsentId}",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages",
+        "Risk.DeliveryAddress.BuildingNumber",
+        "Risk.DeliveryAddress.PostCode",
+        "Risk.DeliveryAddress.StreetName",
+        "Risk.MerchantCategoryCode",
+        "Risk.MerchantCustomerIdentification",
+        "Risk.PaymentContextCode",
+        "Data.Authorisation.CompletionDateTime",
+        "Data.CutOffDateTime",
+        "Data.ExpectedSettlementDateTime",
+        "Data.ExpectedExecutionDateTime",
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev"
+      ],
+      "method": "GET",
+      "path": "/domestic-payment-consents/{ConsentId}",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/domestic-payment-consents/{ConsentId}",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [],
+      "method": "GET",
+      "path": "/file-payment-consents/{ConsentId}/file",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Url",
+        "Errors[*].Path",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/file-payment-consents/{ConsentId}/file",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Message",
+        "Code",
+        "Errors[*].Url",
+        "Errors[*].Path",
+        "Id"
+      ],
+      "method": "GET",
+      "path": "/file-payment-consents/{ConsentId}/file",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "POST",
+      "path": "/file-payment-consents/{ConsentId}/file",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "POST",
+      "path": "/file-payment-consents/{ConsentId}/file",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/international-payment-consents/{ConsentId}",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Data.CutOffDateTime",
+        "Data.ExchangeRateInformation.ExpirationDateTime",
+        "Data.ExchangeRateInformation.ContractIdentification",
+        "Data.ExpectedExecutionDateTime",
+        "Data.Authorisation.CompletionDateTime",
+        "Data.ExpectedSettlementDateTime",
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages",
+        "Meta.FirstAvailableDateTime",
+        "Risk.DeliveryAddress.BuildingNumber",
+        "Risk.DeliveryAddress.PostCode",
+        "Risk.DeliveryAddress.StreetName",
+        "Risk.MerchantCategoryCode",
+        "Risk.MerchantCustomerIdentification",
+        "Risk.PaymentContextCode"
+      ],
+      "method": "GET",
+      "path": "/international-payment-consents/{ConsentId}",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/international-payment-consents/{ConsentId}",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages",
+        "Data.MultiAuthorisation.ExpirationDateTime",
+        "Data.MultiAuthorisation.LastUpdateDateTime",
+        "Data.MultiAuthorisation.NumberReceived",
+        "Data.MultiAuthorisation.NumberRequired"
+      ],
+      "method": "GET",
+      "path": "/domestic-standing-orders/{DomesticStandingOrderId}",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message",
+        "Code"
+      ],
+      "method": "GET",
+      "path": "/domestic-standing-orders/{DomesticStandingOrderId}",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/domestic-standing-orders/{DomesticStandingOrderId}",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Meta.TotalPages",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Data.SupplementaryData",
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev"
+      ],
+      "method": "GET",
+      "path": "/international-payment-consents/{ConsentId}/funds-confirmation",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/international-payment-consents/{ConsentId}/funds-confirmation",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/international-payment-consents/{ConsentId}/funds-confirmation",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Url",
+        "Errors[*].Path",
+        "Id",
+        "Message"
+      ],
+      "method": "POST",
+      "path": "/domestic-scheduled-payment-consents",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Data.Authorisation.CompletionDateTime",
+        "Data.ExpectedSettlementDateTime",
+        "Data.CutOffDateTime",
+        "Data.ExpectedExecutionDateTime",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev",
+        "Links.First",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages",
+        "Risk.MerchantCategoryCode",
+        "Risk.MerchantCustomerIdentification",
+        "Risk.PaymentContextCode",
+        "Risk.DeliveryAddress.BuildingNumber",
+        "Risk.DeliveryAddress.PostCode",
+        "Risk.DeliveryAddress.StreetName"
+      ],
+      "method": "POST",
+      "path": "/domestic-scheduled-payment-consents",
+      "status_code": 201
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "POST",
+      "path": "/domestic-scheduled-payment-consents",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message",
+        "Code"
+      ],
+      "method": "GET",
+      "path": "/international-payments/{InternationalPaymentId}",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/international-payments/{InternationalPaymentId}",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Data.ExpectedSettlementDateTime",
+        "Data.ExpectedExecutionDateTime",
+        "Data.ExchangeRateInformation.ContractIdentification",
+        "Data.ExchangeRateInformation.ExpirationDateTime",
+        "Data.MultiAuthorisation.ExpirationDateTime",
+        "Data.MultiAuthorisation.LastUpdateDateTime",
+        "Data.MultiAuthorisation.NumberReceived",
+        "Data.MultiAuthorisation.NumberRequired",
+        "Links.Prev",
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages"
+      ],
+      "method": "GET",
+      "path": "/international-payments/{InternationalPaymentId}",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "POST",
+      "path": "/international-standing-order-consents",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "POST",
+      "path": "/international-standing-order-consents",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Data.CutOffDateTime",
+        "Data.Authorisation.CompletionDateTime",
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages",
+        "Risk.MerchantCustomerIdentification",
+        "Risk.PaymentContextCode",
+        "Risk.DeliveryAddress.BuildingNumber",
+        "Risk.DeliveryAddress.PostCode",
+        "Risk.DeliveryAddress.StreetName",
+        "Risk.MerchantCategoryCode"
+      ],
+      "method": "POST",
+      "path": "/international-standing-order-consents",
+      "status_code": 201
+    },
+    {
+      "conditionalProperties": [
+        "Data.ExchangeRateInformation.ContractIdentification",
+        "Data.ExchangeRateInformation.ExpirationDateTime",
+        "Data.MultiAuthorisation.ExpirationDateTime",
+        "Data.MultiAuthorisation.LastUpdateDateTime",
+        "Data.MultiAuthorisation.NumberReceived",
+        "Data.MultiAuthorisation.NumberRequired",
+        "Data.ExpectedSettlementDateTime",
+        "Data.ExpectedExecutionDateTime",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev",
+        "Links.First",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages"
+      ],
+      "method": "POST",
+      "path": "/international-scheduled-payments",
+      "status_code": 201
+    },
+    {
+      "conditionalProperties": [
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message",
+        "Code"
+      ],
+      "method": "POST",
+      "path": "/international-scheduled-payments",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "POST",
+      "path": "/international-scheduled-payments",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Risk.DeliveryAddress.BuildingNumber",
+        "Risk.DeliveryAddress.PostCode",
+        "Risk.DeliveryAddress.StreetName",
+        "Risk.MerchantCategoryCode",
+        "Risk.MerchantCustomerIdentification",
+        "Risk.PaymentContextCode",
+        "Data.ExchangeRateInformation.ContractIdentification",
+        "Data.ExchangeRateInformation.ExpirationDateTime",
+        "Data.ExpectedExecutionDateTime",
+        "Data.Authorisation.CompletionDateTime",
+        "Data.CutOffDateTime",
+        "Data.ExpectedSettlementDateTime",
+        "Links.Prev",
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages"
+      ],
+      "method": "GET",
+      "path": "/international-scheduled-payment-consents/{ConsentId}",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Id",
+        "Message",
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url"
+      ],
+      "method": "GET",
+      "path": "/international-scheduled-payment-consents/{ConsentId}",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/international-scheduled-payment-consents/{ConsentId}",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/domestic-payment-consents/{ConsentId}/funds-confirmation",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Data.SupplementaryData",
+        "Links.Prev",
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Meta.TotalPages",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime"
+      ],
+      "method": "GET",
+      "path": "/domestic-payment-consents/{ConsentId}/funds-confirmation",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message",
+        "Code"
+      ],
+      "method": "GET",
+      "path": "/domestic-payment-consents/{ConsentId}/funds-confirmation",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages",
+        "Data.MultiAuthorisation.ExpirationDateTime",
+        "Data.MultiAuthorisation.LastUpdateDateTime",
+        "Data.MultiAuthorisation.NumberReceived",
+        "Data.MultiAuthorisation.NumberRequired",
+        "Data.ExpectedExecutionDateTime",
+        "Data.ExpectedSettlementDateTime",
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev"
+      ],
+      "method": "POST",
+      "path": "/domestic-scheduled-payments",
+      "status_code": 201
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "POST",
+      "path": "/domestic-scheduled-payments",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Id",
+        "Message",
+        "Code",
+        "Errors[*].Url",
+        "Errors[*].Path"
+      ],
+      "method": "POST",
+      "path": "/domestic-scheduled-payments",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages",
+        "Data.SupplementaryData",
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev"
+      ],
+      "method": "GET",
+      "path": "/international-scheduled-payment-consents/{ConsentId}/funds-confirmation",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/international-scheduled-payment-consents/{ConsentId}/funds-confirmation",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/international-scheduled-payment-consents/{ConsentId}/funds-confirmation",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Data.MultiAuthorisation.ExpirationDateTime",
+        "Data.MultiAuthorisation.LastUpdateDateTime",
+        "Data.MultiAuthorisation.NumberReceived",
+        "Data.MultiAuthorisation.NumberRequired",
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages"
+      ],
+      "method": "POST",
+      "path": "/international-standing-orders",
+      "status_code": 201
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "POST",
+      "path": "/international-standing-orders",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "POST",
+      "path": "/international-standing-orders",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Data.Authorisation.CompletionDateTime",
+        "Data.CutOffDateTime",
+        "Links.Prev",
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages",
+        "Risk.DeliveryAddress.PostCode",
+        "Risk.DeliveryAddress.StreetName",
+        "Risk.DeliveryAddress.BuildingNumber",
+        "Risk.MerchantCategoryCode",
+        "Risk.MerchantCustomerIdentification",
+        "Risk.PaymentContextCode"
+      ],
+      "method": "POST",
+      "path": "/domestic-standing-order-consents",
+      "status_code": 201
+    },
+    {
+      "conditionalProperties": [
+        "Id",
+        "Message",
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url"
+      ],
+      "method": "POST",
+      "path": "/domestic-standing-order-consents",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "POST",
+      "path": "/domestic-standing-order-consents",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Data.MultiAuthorisation.ExpirationDateTime",
+        "Data.MultiAuthorisation.LastUpdateDateTime",
+        "Data.MultiAuthorisation.NumberReceived",
+        "Data.MultiAuthorisation.NumberRequired",
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev",
+        "Meta.TotalPages",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime"
+      ],
+      "method": "POST",
+      "path": "/file-payments",
+      "status_code": 201
+    },
+    {
+      "conditionalProperties": [
+        "Id",
+        "Message",
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url"
+      ],
+      "method": "POST",
+      "path": "/file-payments",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message",
+        "Code"
+      ],
+      "method": "POST",
+      "path": "/file-payments",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/domestic-payments/{DomesticPaymentId}",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Data.ExpectedExecutionDateTime",
+        "Data.ExpectedSettlementDateTime",
+        "Data.MultiAuthorisation.ExpirationDateTime",
+        "Data.MultiAuthorisation.LastUpdateDateTime",
+        "Data.MultiAuthorisation.NumberReceived",
+        "Data.MultiAuthorisation.NumberRequired",
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages"
+      ],
+      "method": "GET",
+      "path": "/domestic-payments/{DomesticPaymentId}",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Message",
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id"
+      ],
+      "method": "GET",
+      "path": "/domestic-payments/{DomesticPaymentId}",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/domestic-scheduled-payments/{DomesticScheduledPaymentId}",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/domestic-scheduled-payments/{DomesticScheduledPaymentId}",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Data.MultiAuthorisation.NumberReceived",
+        "Data.MultiAuthorisation.NumberRequired",
+        "Data.MultiAuthorisation.ExpirationDateTime",
+        "Data.MultiAuthorisation.LastUpdateDateTime",
+        "Data.ExpectedSettlementDateTime",
+        "Data.ExpectedExecutionDateTime",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev",
+        "Links.First",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages",
+        "Meta.FirstAvailableDateTime"
+      ],
+      "method": "GET",
+      "path": "/domestic-scheduled-payments/{DomesticScheduledPaymentId}",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Id",
+        "Message",
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url"
+      ],
+      "method": "POST",
+      "path": "/domestic-payment-consents",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "POST",
+      "path": "/domestic-payment-consents",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Data.ExpectedExecutionDateTime",
+        "Data.Authorisation.CompletionDateTime",
+        "Data.CutOffDateTime",
+        "Data.ExpectedSettlementDateTime",
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages",
+        "Meta.FirstAvailableDateTime",
+        "Risk.DeliveryAddress.PostCode",
+        "Risk.DeliveryAddress.StreetName",
+        "Risk.DeliveryAddress.BuildingNumber",
+        "Risk.MerchantCategoryCode",
+        "Risk.MerchantCustomerIdentification",
+        "Risk.PaymentContextCode"
+      ],
+      "method": "POST",
+      "path": "/domestic-payment-consents",
+      "status_code": 201
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/international-standing-order-consents/{ConsentId}",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Message",
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id"
+      ],
+      "method": "GET",
+      "path": "/international-standing-order-consents/{ConsentId}",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Risk.DeliveryAddress.BuildingNumber",
+        "Risk.DeliveryAddress.PostCode",
+        "Risk.DeliveryAddress.StreetName",
+        "Risk.MerchantCategoryCode",
+        "Risk.MerchantCustomerIdentification",
+        "Risk.PaymentContextCode",
+        "Data.CutOffDateTime",
+        "Data.Authorisation.CompletionDateTime",
+        "Links.Prev",
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages"
+      ],
+      "method": "GET",
+      "path": "/international-standing-order-consents/{ConsentId}",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message",
+        "Code"
+      ],
+      "method": "POST",
+      "path": "/domestic-standing-orders",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Data.MultiAuthorisation.ExpirationDateTime",
+        "Data.MultiAuthorisation.LastUpdateDateTime",
+        "Data.MultiAuthorisation.NumberReceived",
+        "Data.MultiAuthorisation.NumberRequired",
+        "Links.Next",
+        "Links.Prev",
+        "Links.First",
+        "Links.Last",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages"
+      ],
+      "method": "POST",
+      "path": "/domestic-standing-orders",
+      "status_code": 201
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "POST",
+      "path": "/domestic-standing-orders",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/file-payments/{FilePaymentId}",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Data.MultiAuthorisation.LastUpdateDateTime",
+        "Data.MultiAuthorisation.NumberReceived",
+        "Data.MultiAuthorisation.NumberRequired",
+        "Data.MultiAuthorisation.ExpirationDateTime",
+        "Links.Next",
+        "Links.Prev",
+        "Links.First",
+        "Links.Last",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages"
+      ],
+      "method": "GET",
+      "path": "/file-payments/{FilePaymentId}",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/file-payments/{FilePaymentId}",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "POST",
+      "path": "/international-scheduled-payment-consents",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Data.Authorisation.CompletionDateTime",
+        "Data.ExchangeRateInformation.ContractIdentification",
+        "Data.ExchangeRateInformation.ExpirationDateTime",
+        "Data.ExpectedSettlementDateTime",
+        "Data.CutOffDateTime",
+        "Data.ExpectedExecutionDateTime",
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev",
+        "Meta.TotalPages",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Risk.DeliveryAddress.StreetName",
+        "Risk.DeliveryAddress.BuildingNumber",
+        "Risk.DeliveryAddress.PostCode",
+        "Risk.MerchantCategoryCode",
+        "Risk.MerchantCustomerIdentification",
+        "Risk.PaymentContextCode"
+      ],
+      "method": "POST",
+      "path": "/international-scheduled-payment-consents",
+      "status_code": 201
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "POST",
+      "path": "/international-scheduled-payment-consents",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [],
+      "method": "GET",
+      "path": "/file-payments/{FilePaymentId}/report-file",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Id",
+        "Message",
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url"
+      ],
+      "method": "GET",
+      "path": "/file-payments/{FilePaymentId}/report-file",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/file-payments/{FilePaymentId}/report-file",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/international-scheduled-payments/{InternationalScheduledPaymentId}",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev",
+        "Meta.TotalPages",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Data.ExchangeRateInformation.ContractIdentification",
+        "Data.ExchangeRateInformation.ExpirationDateTime",
+        "Data.ExpectedExecutionDateTime",
+        "Data.ExpectedSettlementDateTime",
+        "Data.MultiAuthorisation.ExpirationDateTime",
+        "Data.MultiAuthorisation.LastUpdateDateTime",
+        "Data.MultiAuthorisation.NumberReceived",
+        "Data.MultiAuthorisation.NumberRequired"
+      ],
+      "method": "GET",
+      "path": "/international-scheduled-payments/{InternationalScheduledPaymentId}",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Message",
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id"
+      ],
+      "method": "GET",
+      "path": "/international-scheduled-payments/{InternationalScheduledPaymentId}",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/file-payment-consents/{ConsentId}",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/file-payment-consents/{ConsentId}",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Data.CutOffDateTime",
+        "Data.Authorisation.CompletionDateTime",
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages"
+      ],
+      "method": "GET",
+      "path": "/file-payment-consents/{ConsentId}",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "POST",
+      "path": "/domestic-payments",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "POST",
+      "path": "/domestic-payments",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Links.Next",
+        "Links.Prev",
+        "Links.First",
+        "Links.Last",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages",
+        "Data.ExpectedExecutionDateTime",
+        "Data.MultiAuthorisation.LastUpdateDateTime",
+        "Data.MultiAuthorisation.NumberReceived",
+        "Data.MultiAuthorisation.NumberRequired",
+        "Data.MultiAuthorisation.ExpirationDateTime",
+        "Data.ExpectedSettlementDateTime"
+      ],
+      "method": "POST",
+      "path": "/domestic-payments",
+      "status_code": 201
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "POST",
+      "path": "/international-payment-consents",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Data.CutOffDateTime",
+        "Data.ExpectedExecutionDateTime",
+        "Data.ExpectedSettlementDateTime",
+        "Data.Authorisation.CompletionDateTime",
+        "Data.ExchangeRateInformation.ContractIdentification",
+        "Data.ExchangeRateInformation.ExpirationDateTime",
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages",
+        "Risk.DeliveryAddress.PostCode",
+        "Risk.DeliveryAddress.StreetName",
+        "Risk.DeliveryAddress.BuildingNumber",
+        "Risk.MerchantCategoryCode",
+        "Risk.MerchantCustomerIdentification",
+        "Risk.PaymentContextCode"
+      ],
+      "method": "POST",
+      "path": "/international-payment-consents",
+      "status_code": 201
+    },
+    {
+      "conditionalProperties": [
+        "Id",
+        "Message",
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url"
+      ],
+      "method": "POST",
+      "path": "/international-payment-consents",
+      "status_code": 400
+    },
+    {
+      "conditionalProperties": [
+        "Id",
+        "Message",
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url"
+      ],
+      "method": "GET",
+      "path": "/domestic-scheduled-payment-consents/{ConsentId}",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "Risk.MerchantCustomerIdentification",
+        "Risk.PaymentContextCode",
+        "Risk.DeliveryAddress.PostCode",
+        "Risk.DeliveryAddress.StreetName",
+        "Risk.DeliveryAddress.BuildingNumber",
+        "Risk.MerchantCategoryCode",
+        "Data.Authorisation.CompletionDateTime",
+        "Data.ExpectedExecutionDateTime",
+        "Data.ExpectedSettlementDateTime",
+        "Data.CutOffDateTime",
+        "Links.First",
+        "Links.Last",
+        "Links.Next",
+        "Links.Prev",
+        "Meta.FirstAvailableDateTime",
+        "Meta.LastAvailableDateTime",
+        "Meta.TotalPages"
+      ],
+      "method": "GET",
+      "path": "/domestic-scheduled-payment-consents/{ConsentId}",
+      "status_code": 200
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message"
+      ],
+      "method": "GET",
+      "path": "/domestic-scheduled-payment-consents/{ConsentId}",
+      "status_code": 400
+    }
+  ]
+}

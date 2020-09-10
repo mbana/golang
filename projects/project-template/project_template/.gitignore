@@ -1,0 +1,49 @@
+# To to see if a file is ignored use this command:
+# $ git check-ignore -v filename
+#
+# See:
+# * https://stackoverflow.com/a/12168102/241993
+# * https://stackoverflow.com/questions/12144633/explain-which-gitignore-rule-is-ignoring-my-file
+# * https://git-scm.com/docs/git-check-ignore
+
+########################################################################################################################
+### .gitignore for go: https://github.com/github/gitignore/blob/master/Go.gitignore
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Dependency directories (remove the comment below to include it)
+# vendor/
+
+########################################################################################################################
+
+/**/.DS_Store
+
+########################################################################################################################
+# Ignore log files
+/**/*.out
+/**/*.log
+########################################################################################################################
+
+########################################################################################################################
+# Ignore the `.ignore/` folder
+/**/.ignore/**
+########################################################################################################################
+
+########################################################################################################################
+# Ignore binaries from running go build
+# /main
+/**/main
+/**/main.out
+/**/project_template
+/**/project_template.out
+########################################################################################################################

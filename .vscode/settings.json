@@ -1,0 +1,151 @@
+{
+  // https://code.visualstudio.com/docs/getstarted/settings#_creating-user-and-workspace-settings
+  // Golang:BEGIN
+  // Configure settings to be overridden for [go] language.
+  // https://code.visualstudio.com/docs/languages/go
+  // https://github.com/golang/vscode-go/blob/master/docs/settings.md
+  "[go]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true,
+      "source.fixAll": true,
+    },
+    // "editor.defaultFormatter": "golang.go",
+    // "editor.defaultFormatter": "goimports",
+    // "editor.defaultFormatter": "gofumports",
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    "editor.codeActionsOnSaveTimeout": 3000
+  },
+  "[go.mod]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true,
+    },
+  },
+  "gopls": {
+    // Add parameter placeholders when completing a function.
+    "usePlaceholders": true,
+    // If true, enable additional analyses with staticcheck.
+    // Warning: This will significantly increase memory usage.
+    "staticcheck": false,
+    "completionDocumentation": true,
+    "completeUnimported": true,
+    "deepCompletion": true,
+    "expandWorkspaceToModule": true,
+    "verboseWorkDoneProgress": true,
+    // "experimentalWorkspaceModule": true,
+    "matcher": "CaseInsensitive",
+    "symbolMatcher": "CaseInsensitive",
+    // "symbolStyle": "Dynamic",
+    "gofumpt": true,
+    "local": "'github.com/banaio/golang'",
+    "hoverKind": "FullDocumentation",
+    "analyses": {
+      "unreachable": true, // Disable the unreachable analyzer.
+      "unusedparams": true // Enable the unusedparams analyzer.
+    }
+  },
+  "go.autocompleteUnimportedPackages": true,
+  "go.editorContextMenuCommands": {
+    "addImport": true,
+    "addTags": true,
+    "debugTestAtCursor": false,
+    "fillStruct": true,
+    "generateTestForFile": true,
+    "generateTestForFunction": true,
+    "generateTestForPackage": true,
+    "playground": false,
+    "removeTags": false,
+    "testAtCursor": true,
+    "testCoverage": true,
+    "testFile": true,
+    "testPackage": true,
+    "toggleTestFile": true
+  },
+  "go.useCodeSnippetsOnFunctionSuggest": true,
+  "go.useCodeSnippetsOnFunctionSuggestWithoutType": true,
+  "go.enableCodeLens": {
+    "references": true,
+    "runtest": true,
+  },
+  // "go.formatFlags": [
+  //   "-l 'github.com/banaio/golang'",
+  //   "-e",
+  //   "-v"
+  // ],
+  // "go.formatTool": "goimports",
+  "go.alternateTools": {
+    "goimports": "gofumports",
+  },
+  "go.gotoSymbol.includeImports": true,
+  "go.languageServerExperimentalFeatures": {
+    "diagnostics": true,
+    "documentLink": true,
+    "format": false,
+    "gofumpt": true,
+    "gofumports": true,
+  },
+  "go.lintOnSave": "package",
+  "go.lintTool": "golangci-lint",
+  "go.trace.server": "off",
+  // "go.languageServerFlags": [],
+  // colored-line-number|line-number|json|tab|checkstyle, default is "colored-line-number" // format: colored-line-number
+  // "${workspaceFolder}/..."
+  // "--out-format=tab",
+  // "--fast=false",
+  // "--verbose",
+  // "--trace-path=.ignore/golangci-lint/trace.log",
+  // "--cpu-profile-path=.ignore/golangci-lint/cpu_profile.log",
+  // "--mem-profile-path=.ignore/golangci-lint/mem_profile.log",
+  // "--print-resources-usage=true",
+  // "--print-issued-lines=true",
+  // "--color=always",
+  // "--issues-exit-code=0",
+  // "--uniq-by-line=true",
+  // "--sort-results=true",
+  // "--concurrency=32",
+  // "--allow-parallel-runners=true",
+  "go.lintFlags": [
+    "--config=${workspaceFolder}/.golangci.yml",
+    "--fast",
+    "--concurrency=32",
+    "--allow-parallel-runners=true",
+    "--new",
+  ],
+  "go.toolsEnvVars": {
+    // "GL_DEBUG": "gocritic,env,loader,autogen_exclude,nolint,exec",
+    // "GL_MEM_LOG_EVERY": "1",
+    // "GL_TEST_RUN": "1",
+    // "GOLANGCI_COM_RUN": "",
+    // "HELP_RUN": "1",
+    "GOMAXPROCS": "32",
+  },
+  "go.gotoSymbol.includeGoroot": true,
+  "go.testEnvVars": {
+    "GOMAXPROCS": "32",
+  },
+  "go.liveErrors": {
+    "delay": 500,
+    "enabled": true
+  },
+  "go.useLanguageServer": true,
+  "go.vetOnSave": "off",
+  "go.buildOnSave": "package",
+  "go.coverOnSave": false,
+  "go.coverOnSingleTest": false,
+  "go.coverOnSingleTestFile": false,
+  "go.testFlags": [
+    "-v",
+    "-parallel=32",
+  ],
+  "go.coverOnTestPackage": false,
+  "go.generateTestsFlags": [
+    "-parallel 32",
+    "-v"
+  ],
+  "go.vetFlags": [
+    "-all"
+  ],
+  // Golang:END
+}

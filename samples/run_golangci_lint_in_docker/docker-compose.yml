@@ -1,0 +1,29 @@
+version: "3"
+services:
+  run_golangci_lint_in_docker:
+    image: golang:1.12-stretch
+    container_name: run_golangci_lint_in_docker
+    hostname: run_golangci_lint_in_docker
+    volumes:
+      - ./:/root/go_samples/run_golangci_lint_in_docker/:ro
+    command:
+      - /bin/bash
+      - -c
+      - |
+        go version && go env
+        echo -e "\033[92m  ---> installing github.com/golangci/golangci-lint/cmd/golangci-lint ... \033[0m"
+        # working
+        # curl -sfL https://install.goreleaser.com/github.com/golangci/golangci-lint.sh | sh -s -- -b $$(go env GOPATH)/bin v1.12
+
+        #go get -u github.com/golangci/golangci-lint/cmd/golangci-lint
+        #cd $$(go env GOPATH)/src/github.com/golangci/golangci-lint/cmd/golangci-lint
+        #go install -ldflags "-X 'main.version=$$(git describe --tags)' -X 'main.commit=$$(git rev-parse --short HEAD)' -X 'main.date=$$(date)'"
+        # broken
+        curl -sfL https://install.goreleaser.com/github.com/golangci/golangci-lint.sh | sh -s -- -b $$(go env GOPATH)/bin v1.13
+        # curl -sfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh| sh -s -- -b $$(go env GOPATH)/bin v1.13
+
+        golangci-lint --version
+        echo -e "\033[92m  ---> running golangci-lint ... \033[0m"
+        cd /root/go_samples/run_golangci_lint_in_docker/
+        ls -lah
+        golangci-lint run --print-issued-lines=false --fast -v

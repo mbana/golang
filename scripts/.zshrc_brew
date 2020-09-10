@@ -1,0 +1,137 @@
+################################################################################
+# Brew shite
+# https://apple.stackexchange.com/questions/69223/how-to-replace-mac-os-x-utilities-with-gnu-core-utilities
+
+# icu4c is keg-only, which means it was not symlinked into /usr/local,
+# because macOS provides libicucore.dylib (but nothing else).
+#
+# If you need to have icu4c first in your PATH run:
+#   echo 'export PATH="/usr/local/opt/icu4c/bin:$PATH"' >> /Users/mbana/.bash_profile
+#   echo 'export PATH="/usr/local/opt/icu4c/sbin:$PATH"' >> /Users/mbana/.bash_profile
+#
+# For compilers to find icu4c you may need to set:
+#   export LDFLAGS="-L/usr/local/opt/icu4c/lib"
+#   export CPPFLAGS="-I/usr/local/opt/icu4c/include"
+#
+# For pkg-config to find icu4c you may need to set:
+#   export PKG_CONFIG_PATH="/usr/local/opt/icu4c/lib/pkgconfig"
+export PATH="/usr/local/opt/icu4c/bin:$PATH"
+export PATH="/usr/local/opt/icu4c/sbin:$PATH"
+export LDFLAGS="-L/usr/local/opt/icu4c/lib"
+export CPPFLAGS="-I/usr/local/opt/icu4c/include"
+export PKG_CONFIG_PATH="/usr/local/opt/icu4c/lib/pkgconfig"
+
+# If you really need to use these commands with their normal names, you
+# can add a "gnubin" directory to your PATH from your bashrc like:
+#
+# Commands also provided by macOS have been installed with the prefix "g".
+# If you need to use these commands with their normal names, you
+# can add a "gnubin" directory to your PATH from your bashrc like:
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+# All commands have been installed with the prefix "g".
+# If you need to use these commands with their normal names, you
+# can add a "gnubin" directory to your PATH from your bashrc like:
+export PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"
+
+# GNU "tar" has been installed as "gtar".
+# If you need to use it as "tar", you can add a "gnubin" directory
+# to your PATH from your bashrc like:
+export PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"
+
+# GNU "sed" has been installed as "gsed".
+# If you need to use it as "sed", you can add a "gnubin" directory
+# to your PATH from your bashrc like:
+export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
+
+# GNU "indent" has been installed as "gindent".
+# If you need to use it as "indent", you can add a "gnubin" directory
+# to your PATH from your bashrc like:
+export PATH="/usr/local/opt/gnu-indent/libexec/gnubin:$PATH"
+
+# gnu-getopt is keg-only, which means it was not symlinked into /usr/local,
+# because macOS already provides this software and installing another version in
+# parallel can cause all kinds of trouble.
+#
+# If you need to have gnu-getopt first in your PATH run:
+#   echo 'export PATH="/usr/local/opt/gnu-getopt/bin:$PATH"' >> /Users/mbana/.bash_profile
+export PATH="/usr/local/opt/gnu-getopt/bin:$PATH"
+
+# All commands have been installed with the prefix "g".
+# If you need to use these commands with their normal names, you
+# can add a "gnubin" directory to your PATH from your bashrc like:
+export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
+
+# Commands also provided by macOS have been installed with the prefix "g".
+# If you need to use these commands with their normal names, you
+# can add a "gnubin" directory to your PATH from your bashrc like:
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+
+# All commands have been installed with the prefix "g".
+# If you need to use these commands with their normal names, you
+# can add a "gnubin" directory to your PATH from your bashrc like:
+export PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"
+
+# GNU "make" has been installed as "gmake".
+# If you need to use it as "make", you can add a "gnubin" directory
+# to your PATH from your bashrc like:
+export PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
+
+# Additionally, you can access their man pages with normal names if you add
+# the "gnuman" directory to your MANPATH from your bashrc as well:
+# export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:${MANPATH}"
+export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:/usr/local/opt/findutils/share/man:${MANPATH-/usr/share/man}"
+
+# A CA file has been bootstrapped using certificates from the system
+# keychain. To add additional certificates, place .pem files in
+#   /usr/local/etc/openssl@1.1/certs
+#
+# and run
+#   /usr/local/opt/openssl@1.1/bin/c_rehash
+#
+# openssl@1.1 is keg-only, which means it was not symlinked into /usr/local,
+# because macOS provides LibreSSL.
+#
+# If you need to have openssl@1.1 first in your PATH run:
+#   echo 'export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"' >> /Users/mbana/.bash_profile
+#
+# For compilers to find openssl@1.1 you may need to set:
+#   export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
+#   export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
+#
+# For pkg-config to find openssl@1.1 you may need to set:
+#   export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig"
+export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
+export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig"
+
+# curl-openssl is keg-only, which means it was not symlinked into /usr/local,
+# because macOS provides curl.
+#
+# If you need to have curl-openssl first in your PATH run:
+#   echo 'export PATH="/usr/local/opt/curl-openssl/bin:$PATH"' >> /Users/mbana/.bash_profile
+#
+# For compilers to find curl-openssl you may need to set:
+#   export LDFLAGS="-L/usr/local/opt/curl-openssl/lib"
+#   export CPPFLAGS="-I/usr/local/opt/curl-openssl/include"
+#
+# For pkg-config to find curl-openssl you may need to set:
+#   export PKG_CONFIG_PATH="/usr/local/opt/curl-openssl/lib/pkgconfig"
+export PATH="/usr/local/opt/curl-openssl/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/curl-openssl/lib"
+export CPPFLAGS="-I/usr/local/opt/curl-openssl/include"
+export PKG_CONFIG_PATH="/usr/local/opt/curl-openssl/lib/pkgconfig"
+
+# # my version
+# export PATH="$(brew --prefix coreutils)/libexec/gnubin:${PATH}"
+
+# https://gist.github.com/skyzyx/3438280b18e4f7c490db8a2a2ca0b9da#gistcomment-3049694
+# if type brew &>/dev/null; then
+#   HOMEBREW_PREFIX=$(brew --prefix)
+#   # gnubin; gnuman
+#   for d in ${HOMEBREW_PREFIX}/opt/*/libexec/gnubin; do export PATH=$d:$PATH; done
+#   # I actually like that man grep gives the BSD grep man page
+#   #for d in ${HOMEBREW_PREFIX}/opt/*/libexec/gnuman; do export MANPATH=$d:$MANPATH; done
+# fi
+
+################################################################################

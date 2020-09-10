@@ -1,0 +1,35 @@
+{
+  "Version": "v3.1",
+  "Links": {
+    "@type": "GenericOBDiscoveryAPILinks",
+    "links": {
+      "GetParty": "https://matls.rs.aspsp.ob.forgerock.financial/open-banking/v3.1/aisp/party",
+      "GetAccountStatements": "https://matls.rs.aspsp.ob.forgerock.financial/open-banking/v3.1/aisp/accounts/{AccountId}/statements",
+      "GetScheduledPayments": "https://matls.rs.aspsp.ob.forgerock.financial/open-banking/v3.1/aisp/scheduled-payments",
+      "CreateAccountAccessConsent": "https://matls.rs.aspsp.ob.forgerock.financial/open-banking/v3.1/aisp/account-access-consents",
+      "GetProducts": "https://matls.rs.aspsp.ob.forgerock.financial/open-banking/v3.1/aisp/products",
+      "GetTransactions": "https://matls.rs.aspsp.ob.forgerock.financial/open-banking/v3.1/aisp/transactions",
+      "GetAccountTransactions": "https://matls.rs.aspsp.ob.forgerock.financial/open-banking/v3.1/aisp/accounts/{AccountId}/transactions",
+      "GetAccountScheduledPayments": "https://matls.rs.aspsp.ob.forgerock.financial/open-banking/v3.1/aisp/accounts/{AccountId}/scheduled-payments",
+      "GetAccountStatementFile": "https://matls.rs.aspsp.ob.forgerock.financial/open-banking/v3.1/aisp/accounts/{AccountId}/statements/{StatementId}/file",
+      "GetAccounts": "https://matls.rs.aspsp.ob.forgerock.financial/open-banking/v3.1/aisp/accounts",
+      "GetAccountStandingOrders": "https://matls.rs.aspsp.ob.forgerock.financial/open-banking/v3.1/aisp/accounts/{AccountId}/standing-orders",
+      "GetBalances": "https://matls.rs.aspsp.ob.forgerock.financial/open-banking/v3.1/aisp/balances",
+      "GetAccount": "https://matls.rs.aspsp.ob.forgerock.financial/open-banking/v3.1/aisp/accounts/{AccountId}",
+      "GetAccountProduct": "https://matls.rs.aspsp.ob.forgerock.financial/open-banking/v3.1/aisp/accounts/{AccountId}/product",
+      "GetOffers": "https://matls.rs.aspsp.ob.forgerock.financial/open-banking/v3.1/aisp/offers",
+      "GetBeneficiaries": "https://matls.rs.aspsp.ob.forgerock.financial/open-banking/v3.1/aisp/accounts/{AccountId}/beneficiaries",
+      "GetAccountStatementTransactions": "https://matls.rs.aspsp.ob.forgerock.financial/open-banking/v3.1/aisp/accounts/{AccountId}/statements/{StatementId}/transactions",
+      "GetAccountOffers": "https://matls.rs.aspsp.ob.forgerock.financial/open-banking/v3.1/aisp/accounts/{AccountId}/offers",
+      "GetAccountDirectDebits": "https://matls.rs.aspsp.ob.forgerock.financial/open-banking/v3.1/aisp/accounts/{AccountId}/direct-debits",
+      "GetAccountAccessConsent": "https://matls.rs.aspsp.ob.forgerock.financial/open-banking/v3.1/aisp/account-access-consents/{ConsentId}",
+      "GetStatements": "https://matls.rs.aspsp.ob.forgerock.financial/open-banking/v3.1/aisp/statements",
+      "GetAccountBalances": "https://matls.rs.aspsp.ob.forgerock.financial/open-banking/v3.1/aisp/accounts/{AccountId}/balances",
+      "GetAccountParty": "https://matls.rs.aspsp.ob.forgerock.financial/open-banking/v3.1/aisp/accounts/{AccountId}/party",
+      "DeleteAccountAccessConsent": "https://matls.rs.aspsp.ob.forgerock.financial/open-banking/v3.1/aisp/account-access-consents/{ConsentId}",
+      "GetStandingOrders": "https://matls.rs.aspsp.ob.forgerock.financial/open-banking/v3.1/aisp/standing-orders",
+      "GetAccountStatement": "https://matls.rs.aspsp.ob.forgerock.financial/open-banking/v3.1/aisp/accounts/{AccountId}/statements/{StatementId}",
+      "GetDirectDebits": "https://matls.rs.aspsp.ob.forgerock.financial/open-banking/v3.1/aisp/direct-debits"
+    }
+  }
+}

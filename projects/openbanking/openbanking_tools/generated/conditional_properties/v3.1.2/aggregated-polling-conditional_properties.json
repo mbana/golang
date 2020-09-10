@@ -1,0 +1,50 @@
+{
+  "swagger_path": "specifications/read-write/v3.1.2/aggregated-polling-swagger.yaml",
+  "endpoints": [
+    {
+      "conditionalProperties": [
+        "Id",
+        "Message",
+        "Code",
+        "Errors[*].Path",
+        "Errors[*].Url"
+      ],
+      "method": "POST",
+      "path": "/events",
+      "status_code": 500
+    },
+    {
+      "conditionalProperties": [
+        "sets",
+        "moreAvailable"
+      ],
+      "method": "POST",
+      "path": "/events",
+      "status_code": 201
+    },
+    {
+      "conditionalProperties": [
+        "Code",
+        "Errors[*].Url",
+        "Errors[*].Path",
+        "Id",
+        "Message"
+      ],
+      "method": "POST",
+      "path": "/events",
+      "status_code": 403
+    },
+    {
+      "conditionalProperties": [
+        "Errors[*].Path",
+        "Errors[*].Url",
+        "Id",
+        "Message",
+        "Code"
+      ],
+      "method": "POST",
+      "path": "/events",
+      "status_code": 400
+    }
+  ]
+}
