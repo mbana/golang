@@ -1,0 +1,10 @@
+main
+
+.github
+.editorconfig
+.golangci.yml
+
+README.md
+*.md
+
+.tmp

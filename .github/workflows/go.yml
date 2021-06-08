@@ -1,7 +1,7 @@
 # Examples:
 # * https://github.com/actions/setup-go
 # * https://github.com/mvdan/github-actions-golang
-name: go
+name: build-test
 on:
   - push
   - pull_request
