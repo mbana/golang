@@ -10,7 +10,8 @@ Golang mono repo.
 
 ## Pages
 
-* [./project_template/README.md](./project_template/README.md).
+* [./generics/GENERICS.md](./generics/GENERICS.md).
+* [./generics/pre-release-v1](./generics/pre-release-v1).
 * [./samples/README.md](./samples/README.md).
 
 ## Docs

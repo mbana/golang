@@ -127,7 +127,7 @@ for MODULE_DIR in ${FOUND[*]}; do
     echo "  ${GREEN}MODULE_DIR${RESET}=${MODULE_DIR}, ${GREEN}pwd${RESET}=$(pwd)"
     go build ./... || printf "%b" "${RED_STRING}" "Failed on go go build ${GREEN}MODULE_DIR${RESET}=${MODULE_DIR} ... continuing" $'\n'
     gotest ${PEDANTIC_FLAGS} ${VERBOSE} ${GO_TEST_NO_CACHE} ${GO_TEST_PARALLEL} ${GO_TEST_VET} ./... || printf "%b" "${RED_STRING}" "Failed on gotest  ${GREEN}MODULE_DIR${RESET}=${MODULE_DIR} ... continuing" $'\n'
-    go run cmd/main.go || printf "%b" "${RED_STRING}" "Failed on go run cmd/main.go  ${GREEN}MODULE_DIR${RESET}=${MODULE_DIR} ... continuing" $'\n'
+    go run cmd/main.go || make || printf "%b" "${RED_STRING}" "Failed on go run cmd/main.go  ${GREEN}MODULE_DIR${RESET}=${MODULE_DIR} ... continuing" $'\n'
   ) || printf "%b" "${RED_STRING}" "Failed to on ${GREEN}MODULE_DIR${RESET}=${MODULE_DIR} ... continuing" $'\n'
 done
 
