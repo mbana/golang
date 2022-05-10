@@ -1,0 +1,11 @@
+SSID: <some_software_statement_id>
+ORGANISATION_ID: <some_organisation_id>
+SSA: <some_software_statement_header>.<some_software_statement_payload>.<some_software_statement_signature>
+KID: <some_kid>
+request_object_signing_alg: PS256
+encryption_private  : ./keys/encryption/f653ffe9f1f590887d5de5e0a89fee1ebc1feea6.key
+encryption_public   : ./keys/encryption/f653ffe9f1f590887d5de5e0a89fee1ebc1feea6.pem
+signature_private   : ./keys/signature/44f7bf4f272688b2ae02400ca7767fc2352c7755.key
+signature_public    : ./keys/signature/44f7bf4f272688b2ae02400ca7767fc2352c7755.pem
+transport_private   : ./keys/transport/f67d6ede80ed00663c409729800b4c586d1d7df7.key
+transport_public    : ./keys/transport/f67d6ede80ed00663c409729800b4c586d1d7df7.pem
