@@ -5,6 +5,8 @@ set -euf \
   -o noclobber \
   -o pipefail
 
+set -x
+
 # https://stackoverflow.com/questions/9910966/how-to-get-shell-to-self-detect-using-zsh-or-bash
 # https://stackoverflow.com/a/9911082/241993
 # https://unix.stackexchange.com/questions/9501/how-to-test-what-shell-i-am-using-in-a-terminal
@@ -36,16 +38,6 @@ print_separator_v3
 VARS_SCRIPT=("FOUND" "TOTAL")
 PRINT_VARS_SCRIPT=$(printf '%s\n' "${VARS_SCRIPT[@]}" | xargs -n1 -IV bash -c 'echo -en "${INDENT}${GREEN}V${RESET}=$V\n"')
 echo "${PRINT_VARS_SCRIPT}"
-
-if [[ ! -x "$(command -v gotest 2>/dev/null)" ]]; then
-  printf "${YELLOW}WARN:${RESET} %s\n" "not installed - github.com/rakyll/gotest"
-  go get -u -x github.com/rakyll/gotest
-  printf "${GREEN}INFO:${RESET} %s - %s\n" \
-    "github.com/rakyll/gotest installed" \
-    "gotest=$(command -v gotest 2>/dev/null)"
-else
-  printf "${GREEN}INFO:${RESET} %s\n" "found github.com/rakyll/gotest - gotest=$(command -v gotest 2>/dev/null)"
-fi
 
 ###################################################################################################
 
