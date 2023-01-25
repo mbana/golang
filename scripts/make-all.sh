@@ -5,8 +5,6 @@ set -euf \
   -o noclobber \
   -o pipefail
 
-set -x
-
 # https://stackoverflow.com/questions/9910966/how-to-get-shell-to-self-detect-using-zsh-or-bash
 # https://stackoverflow.com/a/9911082/241993
 # https://unix.stackexchange.com/questions/9501/how-to-test-what-shell-i-am-using-in-a-terminal

@@ -57,7 +57,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: test-${{ matrix.os }}-${{ matrix.go }}
-        continue-on-error: true
+        continue-on-error: false
         shell: bash
         run: |
           ./scripts/make-all.sh
