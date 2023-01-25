@@ -1,0 +1,63 @@
+# Examples:
+# * https://github.com/actions/setup-go
+# * https://github.com/mvdan/github-actions-golang
+name: ci
+on:
+  - push
+  - pull_request
+
+defaults:
+  run:
+    shell: bash
+jobs:
+  project_template:
+    env:
+      TERM: "xterm-256color"
+    continue-on-error: true
+    strategy:
+      max-parallel: 6
+      fail-fast: false
+      matrix:
+        go:
+          - 1.18
+          - 1.19
+        os:
+          - ubuntu-20.04
+          - ubuntu-22.04
+          # - ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    name: ${{ github.event.repository.name }}-${{ matrix.os }}-${{ matrix.go }}
+    steps:
+      - name: environment_details - ${{ matrix.os }}_${{ matrix.go }}
+        continue-on-error: true
+        shell: bash
+        run: |
+          pwd
+          ls -lah .
+          ls -lah ..
+          ls -lah ../
+          ls -lah /
+          printf -- "  %b" \
+            "uname -a=$(uname -a)" $'\n' \
+            "uname -s=$(uname -s)" $'\n'
+
+      # - name: install linux packages - ${{ matrix.os }}_${{ matrix.go }}
+      #   if: matrix.os == 'ubuntu-latest'
+      #   run: sudo apt update && sudo apt install -y --no-install-recommends make
+
+      - name: install-packages-${{ matrix.os }}-${{ matrix.go }}
+        run: sudo apt update && sudo apt install -y --no-install-recommends make
+
+      - name: setup-go-${{ matrix.os }}-${{ matrix.go }}
+        uses: actions/setup-go@v1
+        with:
+          go-version: ${{ matrix.go }}
+
+      - name: checkout-${{ matrix.os }}-${{ matrix.go }}
+        uses: actions/checkout@v2
+
+      - name: test-${{ matrix.os }}-${{ matrix.go }}
+        continue-on-error: true
+        shell: bash
+        run: |
+          ./scripts/make-all.sh

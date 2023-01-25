@@ -1,3 +1,3 @@
-module github.com/banaio/go_samples/reverse_proxy
+module github.com/banaio/golang/samples/reverse_proxy
 
 go 1.18

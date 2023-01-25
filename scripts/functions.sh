@@ -9,18 +9,18 @@ set -euf \
 # https://stackoverflow.com/a/9911082/241993
 # https://unix.stackexchange.com/questions/9501/how-to-test-what-shell-i-am-using-in-a-terminal
 case "${SHELL}" in
-*/zsh)
-  # assume Zsh
-  ;;
-*/bash)
-  # assume Bash
-  shopt -s \
-    extglob \
-    globstar \
-    nullglob
-  ;;
-*) ;;
-  # assume something else
+  */zsh)
+    # assume Zsh
+    ;;
+  */bash)
+    # assume Bash
+    shopt -s \
+      extglob \
+      globstar \
+      nullglob
+    ;;
+  *) ;;
+    # assume something else
 esac
 
 alias cp='cp -v'
@@ -136,4 +136,4 @@ function print_env() {
   echo "${print_vars}"
 }
 
-print_env
+# print_env

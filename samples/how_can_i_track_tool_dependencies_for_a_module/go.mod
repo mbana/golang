@@ -1,4 +1,4 @@
-module github.com/banaio/go_samples/how_can_i_track_tool_dependencies_for_a_module
+module github.com/banaio/golang/samples/how_can_i_track_tool_dependencies_for_a_module
 
 require (
 	github.com/fzipp/gocyclo v0.0.0-20150627053110-6acd4345c835 // indirect

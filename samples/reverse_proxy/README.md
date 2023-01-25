@@ -1,4 +1,4 @@
-# `github.com/banaio/go_samples/reverse_proxy`
+# `github.com/banaio/golang/samples/reverse_proxy`
 
 ## Run
 

@@ -1,4 +1,4 @@
-module github.com/banaio/go_samples/skeletoncmd
+module github.com/banaio/golang/samples/skeletoncmd
 
 go 1.18
 

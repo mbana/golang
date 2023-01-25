@@ -1,4 +1,4 @@
-module github.com/banaio/go_samples/echo_server_single_page_application_working
+module github.com/banaio/golang/samples/echo_server_single_page_application_working
 
 require (
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible // indirect

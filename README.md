@@ -1,6 +1,6 @@
 # `golang`
 
-![GitHub Workflows ](https://github.com/banaio/golang/workflows/go/badge.svg)
+![GitHub Workflows ](https://github.com/banaio/golang/workflows/ci/badge.svg)
 
 ----
 
@@ -10,8 +10,6 @@ Golang mono repo.
 
 ## Pages
 
-* [./generics/GENERICS.md](./generics/GENERICS.md).
-* [./generics/pre-release-v1](./generics/pre-release-v1).
 * [./samples/README.md](./samples/README.md).
 
 ## Docs
@@ -27,4 +25,4 @@ Golang mono repo.
 
 Google has a Linux installer to install go on linux: https://storage.googleapis.com/golang/getgo/installer_linux
 
-This fetches the latest version of "go" and installs it. Seems like this is the easiest way as of now to install the latest go version on Linux.
+This fetches the latest version of `go` and installs it. Seems like this is the easiest way as of now to install the latest `go` version on Linux.
